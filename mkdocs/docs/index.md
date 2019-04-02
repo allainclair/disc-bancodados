@@ -11,7 +11,8 @@
 
 ## Disciplina
 
-* **Site:** https://allainclair.github.io/disc-bancodados/
+* **Site:** [https://allainclair.github.io/disc-bancodados/](
+  https://allainclair.github.io/disc-bancodados/)
 
 ## Avaliação (projeto)
 
