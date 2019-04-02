@@ -1,0 +1,25 @@
+extra:
+  search:
+    language: 'en, pt'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+
+nav:
+- Introdução: index.md
+- Aula 1 (2019-04-02): aula1.md
+
+plugins:
+  - search
+  - pdf-export
+
+site_name: Banco de dados
+site_description: Disciplina de banco de dados
+site_author: Allainclair Flausino dos Santos
+site_url: https://github.com/allainclair
+
+theme:
+  language: pt
+  name: material
