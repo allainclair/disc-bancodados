@@ -126,4 +126,9 @@ representado através de um diagrama, chamado **diagrama entidade-relacionamento
 
 ![Banco de dados](images/diag-entidade-relacionamento.svg)
 
+#### Exercício para próxima aula 1.
+
+Escolha no mínimo 4 entidades para gerar um diagrama de entidade 
+relacionamento.
+
 ### Modelo lógico (nivel intermediário) 
