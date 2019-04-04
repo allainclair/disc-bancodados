@@ -20,3 +20,14 @@
 * prova 2 [0-10]
 * trabalho 1 [0-10]
 * **Nota final (NF):** (prova 1 + prova 2 + trabalho 1) / 3
+* Nota Exame (NE)
+* **Média final (MF) = ** (NF + NE) / 2
+
+```Python tab=
+if NF > 6.0:
+    print('aprovado')
+elif MF > 5.0:
+    print('aprovado')
+else:
+    print('reprovado')
+```

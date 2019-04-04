@@ -5,69 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff25776-ec2f-4a92-b0f7-1ad21fd0dbc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/disc-bancodados.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mkdocs/docs/aula1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mkdocs/docs/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mkdocs/mkdocs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/material-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/FontAwesome.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/FontAwesome.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/FontAwesome.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/MaterialIcons-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/specimen/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/bitbucket.1b09e088.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/github.f0b8504a.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons/gitlab.6dd19c00.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/application.dc02f8ce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.du.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.jp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.multi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.no.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.stemmer.support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/lunr.tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/tinyseg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/lunr/wordcut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/javascripts/modernizr.01ccdecf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stylesheets/application-palette.224b79ff.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stylesheets/application.3020aac5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula1/aula1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs/docs/images/aula1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/aula1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/database.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs/docs/images/database.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/search_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs/docs/images/aula1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs/docs/index.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,10 +22,19 @@
         <entry file="file://$PROJECT_DIR$/mkdocs/docs/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <first_editor relative-caret-position="480">
+                <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -93,7 +43,9 @@
         <entry file="file://$PROJECT_DIR$/mkdocs/docs/aula1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="38" lean-forward="true" selection-end-line="11" selection-end-column="38" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -119,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -128,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mkdocs/mkdocs.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="360">
+              <caret line="24" column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -149,11 +101,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mkdocs/mkdocs.yaml" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/mkdocs/mkdocs.yml" />
         <option value="$PROJECT_DIR$/mkdocs/docs/aula1.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/mkdocs/docs/index.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -192,7 +145,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../disc-estrutura-dados" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -246,35 +199,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mkdocs/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mkdocs/docs/aula1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -288,11 +212,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mkdocs/mkdocs.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdocs/docs/aula1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="38" lean-forward="true" selection-end-line="11" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs/docs/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <first_editor relative-caret-position="480">
+            <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
