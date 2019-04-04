@@ -24,9 +24,9 @@
 * **Média final (MF) = ** (NF + NE) / 2
 
 ```Python tab=
-if NF > 6.0:
+if NF >= 6.0:
     print('aprovado')
-elif MF > 5.0:
+elif MF >= 5.0:
     print('aprovado')
 else:
     print('reprovado')
