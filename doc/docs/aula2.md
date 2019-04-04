@@ -124,11 +124,62 @@ A técnica mais difundida de modelagem conceitual é a abordagem
 representado através de um diagrama, chamado **diagrama entidade-relacionamento
 (DER)**.
 
-![Banco de dados](images/diag-entidade-relacionamento.svg)
+* Retângulos são **entidades**;
+* Elipses são **atributos**;
+* Losangos são **relacionamentos** que também podem ser nomeados;
+* As cardinalidades são indicadas com número ou letra (1, n, m por exemplo);
+* Atributos sublinhados indicam atributo único, não pode existir repetição. 
+  Isso ajuda a identificar de forma **única** uma entidade.
+
+    !!! example "Exemplo 2.4"
+        Uma entidade quando levada para um DB (populado) gera **instâncias** 
+        para o banco de dados. Por exemplo, uma entidade produto tem um 
+        atributo nome = "iPhone" quando o DB é populado.
+      
+        Dessa forma, um código único (atributo único) deve ser atribuído para 
+        esse iPhone (1 por exemplo); pois uma instância de produto com nome 
+        "Galaxy" não pode ter o mesmo código.
+        
+        Isso gera uma identidade única para cada instância da tabela Produto
+        do banco de dados.
+
+A figura a seguir ilustra um DER de duas entidades: **Produto** e **Tipo de 
+Produto**.
+
+![Banco de dados](images/diag-entidade-relacionamento.svg) 
 
 #### Exercício 1 para próxima aula
 
-Escolha no mínimo 4 entidades para gerar um diagrama de entidade 
-relacionamento.
+Gerar um diagrama de entidade e relacionamento com as seguintes entidades:
+Aluno, Disciplina, Professor e Curso. Use poucos atributos. 
 
 ### Modelo lógico (nível intermediário) 
+
+Um modelo lógico é uma descrição de um banco de dados no nível de abstração
+visto pelo usuário do SGBD. Assim, o modelo lógico é **dependente do tipo
+particular de SGBD** que está sendo usado.
+
+Em um SGBD relacional, os dados estão organizados na
+forma de **tabelas**. As tabelas a seguir são das entidades **Produto** e 
+**Tipo de Produdo** respectivamente. 
+
+
+|CodigoProduto|DescProduto  |PrecoProduto|CodigoTipoProduto|
+|-------------|-------------|------------|-----------------|
+|1            |iMac         |20.000      |1                |
+|2            |Dell         |5.000       |1                |
+|3            |Jato de tinta|1.000       |2                |
+|4            |Laser        |2.000       |2                |
+
+
+|CodigoTipoProduto|DescTipoProduto|
+|-----------------|---------------|
+|1                |Computador     |
+|2                |Impressora     |
+
+## Projeto de BD
+
+Duas fases:
+
+* Modelagem conceitual;
+* Projeto lógico.
