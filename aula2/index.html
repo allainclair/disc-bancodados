@@ -176,6 +176,11 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#projeto-de-bd" title="Projeto de BD">
+    Projeto de BD
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -247,6 +252,11 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#projeto-de-bd" title="Projeto de BD">
+    Projeto de BD
+  </a>
 </li>
 </ul>
 </nav>
@@ -368,11 +378,100 @@ complexos.</p>
 <strong>entidade-relacionamento (ER)</strong>. Nesta técnica, um modelo conceitual é usualmente
 representado através de um diagrama, chamado <strong>diagrama entidade-relacionamento
 (DER)</strong>.</p>
-<p><img alt="Banco de dados" src="../images/diag-entidade-relacionamento.svg"/></p>
+<ul>
+<li>Retângulos são <strong>entidades</strong>;</li>
+<li>Elipses são <strong>atributos</strong>;</li>
+<li>Losangos são <strong>relacionamentos</strong> que também podem ser nomeados;</li>
+<li>As cardinalidades são indicadas com número ou letra (1, n, m por exemplo);</li>
+<li>
+<p>Atributos sublinhados indicam atributo único, não pode existir repetição. 
+  Isso ajuda a identificar de forma <strong>única</strong> uma entidade.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 2.4</p>
+<p>Uma entidade quando levada para um DB (populado) gera <strong>instâncias</strong> 
+para o banco de dados. Por exemplo, uma entidade produto tem um 
+atributo nome = "iPhone" quando o DB é populado.</p>
+<p>Dessa forma, um código único (atributo único) deve ser atribuído para 
+esse iPhone (1 por exemplo); pois uma instância de produto com nome 
+"Galaxy" não pode ter o mesmo código.</p>
+<p>Isso gera uma identidade única para cada instância da tabela Produto
+do banco de dados.</p>
+</div>
+</li>
+</ul>
+<p>A figura a seguir ilustra um DER de duas entidades: <strong>Produto</strong> e <strong>Tipo de 
+Produto</strong>.</p>
+<p><img alt="Banco de dados" src="../images/diag-entidade-relacionamento.svg"/> </p>
 <h4 id="exercicio-1-para-proxima-aula">Exercício 1 para próxima aula</h4>
-<p>Escolha no mínimo 4 entidades para gerar um diagrama de entidade 
-relacionamento.</p>
+<p>Gerar um diagrama de entidade e relacionamento com as seguintes entidades:
+Aluno, Disciplina, Professor e Curso. Use poucos atributos. </p>
 <h3 id="modelo-logico-nivel-intermediario">Modelo lógico (nível intermediário)</h3>
+<p>Um modelo lógico é uma descrição de um banco de dados no nível de abstração
+visto pelo usuário do SGBD. Assim, o modelo lógico é <strong>dependente do tipo
+particular de SGBD</strong> que está sendo usado.</p>
+<p>Em um SGBD relacional, os dados estão organizados na
+forma de <strong>tabelas</strong>. As tabelas a seguir são das entidades <strong>Produto</strong> e 
+<strong>Tipo de Produdo</strong> respectivamente. </p>
+<table>
+<thead>
+<tr>
+<th>CodigoProduto</th>
+<th>DescProduto</th>
+<th>PrecoProduto</th>
+<th>CodigoTipoProduto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>iMac</td>
+<td>20.000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dell</td>
+<td>5.000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Jato de tinta</td>
+<td>1.000</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Laser</td>
+<td>2.000</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>CodigoTipoProduto</th>
+<th>DescTipoProduto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Computador</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Impressora</td>
+</tr>
+</tbody>
+</table>
+<h2 id="projeto-de-bd">Projeto de BD</h2>
+<p>Duas fases:</p>
+<ul>
+<li>Modelagem conceitual;</li>
+<li>Projeto lógico.</li>
+</ul>
 </article>
 </div>
 </div>
