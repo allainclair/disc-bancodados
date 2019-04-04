@@ -1,0 +1,431 @@
+
+<!DOCTYPE doctype html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Disciplina de banco de dados" name="description"/>
+<link href="https://github.com/allainclair/aula2/" rel="canonical"/>
+<meta content="Allainclair Flausino dos Santos" name="author"/>
+<meta content="Copiar para área de transferência" name="lang:clipboard.copy"/>
+<meta content="Copiado para área de transferência" name="lang:clipboard.copied"/>
+<meta content="en, pt" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="Nenhum resultado encontrado" name="lang:search.result.none"/>
+<meta content="1 resultado encontrado" name="lang:search.result.one"/>
+<meta content="# resultados encontrados" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-4.1.1" name="generator"/>
+<title>Aula 2 (2019-04-04) - Banco de dados</title>
+<link href="../assets/stylesheets/application.3020aac5.css" rel="stylesheet"/>
+<script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
+</head>
+<body dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#banco-de-dados-conceitos" tabindex="1">
+        Ir para o conteúdo
+      </a>
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
+              Banco de dados
+            </span>
+<span class="md-header-nav__topic">
+              Aula 2 (2019-04-04)
+            </span>
+</div>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Buscar" spellcheck="false" type="text"/>
+<label class="md-icon md-search__icon" for="__search"></label>
+<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+        
+      </button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="result">
+<div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
+<i class="md-icon"></i>
+</a>
+    Banco de dados
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href=".." title="Introdução">
+      Introdução
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aula1/" title="Aula 1 (2019-04-02)">
+      Aula 1 (2019-04-02)
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 2 (2019-04-04)
+      </label>
+<a class="md-nav__link md-nav__link--active" href="./" title="Aula 2 (2019-04-04)">
+      Aula 2 (2019-04-04)
+    </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Índice</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dado" title="Dado">
+    Dado
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#banco-de-dados" title="Banco de Dados">
+    Banco de Dados
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sgbd" title="SGBD">
+    SGBD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sbd" title="SBD">
+    SBD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-de-banco-de-dados" title="Modelo de banco de dados">
+    Modelo de banco de dados
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#niveis-de-modelos" title="Níveis de modelos">
+    Níveis de modelos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-conceitual-nivel-alto" title="Modelo conceitual (nível alto)">
+    Modelo conceitual (nível alto)
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exercicio-para-proxima-aula-1" title="Exercício para próxima aula 1">
+    Exercício para próxima aula 1
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-logico-nivel-intermediario" title="Modelo lógico (nível intermediário)">
+    Modelo lógico (nível intermediário)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aula3/" title="Aula 3 (2019-04-09)">
+      Aula 3 (2019-04-09)
+    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Índice</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dado" title="Dado">
+    Dado
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#banco-de-dados" title="Banco de Dados">
+    Banco de Dados
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sgbd" title="SGBD">
+    SGBD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sbd" title="SBD">
+    SBD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-de-banco-de-dados" title="Modelo de banco de dados">
+    Modelo de banco de dados
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#niveis-de-modelos" title="Níveis de modelos">
+    Níveis de modelos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-conceitual-nivel-alto" title="Modelo conceitual (nível alto)">
+    Modelo conceitual (nível alto)
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exercicio-para-proxima-aula-1" title="Exercício para próxima aula 1">
+    Exercício para próxima aula 1
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-logico-nivel-intermediario" title="Modelo lógico (nível intermediário)">
+    Modelo lógico (nível intermediário)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="aula2.pdf" title="PDF Export"></a>
+<h1 id="banco-de-dados-conceitos">Banco de dados - Conceitos</h1>
+<h2 id="dado">Dado</h2>
+<p>Elemento primitivo de um banco de dados. São fatos que podem ser gravados e 
+que possuem um significado implícito.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 2.1</p>
+<p>Casa, carro, pessoa, professor, cidade, estado, país, aluno, dado, banco
+de dados ("recursão?"), etc.</p>
+</div>
+<h2 id="banco-de-dados">Banco de Dados</h2>
+<ul>
+<li>
+<p>Representa uma porção do mundo real, o qual chamamos de minimundo ou 
+"universo de discurso". O banco de dados deve sempre refletir o estado atual
+deste universo.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 2.2</p>
+<p>Se um banco de dados possui as entidades <strong>professor e disciplina</strong>; 
+quando o professor termina de lecionar a disciplina, o sistema que 
+consulta o banco de dados não pode informar que o professor ainda 
+leciona a disciplina após o término, pois o banco deve refletir o 
+estado
+atual deste universo.</p>
+<p>Isso pode ser feito de forma <strong>automática ou manual</strong>. Seria muito 
+mais 
+prático se fosse feito de forma automática. Se o período letivo 
+terminou, teoricamente a disciplina deve estar fechada.</p>
+<p>Porém às vezes é necessário que haja intervenção humana para que ações 
+sejam tomadas.</p>
+</div>
+</li>
+<li>
+<p>Conjunto lógico e ordenado de dados que possuem algum significado, e não uma
+coleção aleatória.</p>
+</li>
+<li>
+<p>É <strong>projetado</strong>, <strong>construído</strong> e <strong>povoado</strong> por dados, por meio de uma 
+<em>interface</em> que geralmente é o SGBD.</p>
+</li>
+</ul>
+<h2 id="sgbd">SGBD</h2>
+<p>Um <strong>Sistema Gerenciador de Banco de Dados (SGBD)</strong> é uma coleção de programas 
+que permite aos usuários criar e manter (gerenciar ou administrar) um banco de 
+dados.</p>
+<ul>
+<li>Definição (elementos e tipos dos dados)</li>
+<li>Construção (armazenamento de dados em mídia);</li>
+<li>Manipulação (consulta e atualização);</li>
+<li>Compartilhamento (de dados);</li>
+<li>Proteção do sistema (mal funcionamento);</li>
+<li>Segurança (ataques).</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 2.3</p>
+<ul>
+<li>Definir um sistema de banco de dados para uma instituição de pesquisa;</li>
+<li>É necessário existir dois bancos de dados separados, pois existem dois
+  setores bem distintos dentro da instituição, e cada um desses setores 
+  será responsável por administrar o seu respectivo banco. Por exemplo 
+  <strong>estatística</strong> e <strong>informática</strong>;</li>
+<li>De acordo com o projeto, o <strong>banco de estatística deve ter 10 tabelas 
+  (que se relacionam)</strong>; já o <strong>banco de informática precisa de 20 tabelas</strong>;</li>
+<li>Uma das tabelas de estatística é de disciplinas, que se relaciona com 
+  uma tabela de professores, pois <strong>cada professor pode lecionar N 
+  disciplinas</strong> durante um período de tempo; porém <strong>uma disciplina só 
+  pode ter um professor</strong>;</li>
+<li>Essas tabelas precisam ser criadas e <strong>povoadas</strong>, ou seja, dados 
+  externos devem ser adicionados nas tabelas (construção e manipulação);
+  Para povoar um banco é necessário que usuários adicionem esses novos 
+  dados, ou outro sistema externo pode povoar esse banco caso seja 
+  necessário;</li>
+<li>Como os dados do banco de estatística é interessante para o 
+  departamento de informática, esse banco é compartilhado apenas para o 
+  departamento de informática por meio de acesso a um servidor adquirido
+  que fica fisicamente no departamento de estatística e é compartilhado 
+  por uma rede interna entre estatística e informática; outros 
+  departamento não podem acessar esse banco de estatística; já o banco 
+  de informática já é aberto para a instituição inteira;</li>
+<li>O banco de informática faz espelhamento, os dados são duplicados para 
+  caso haja perda total ou parcial de uma das duas cópias.</li>
+</ul>
+</div>
+<p>Antigamente cada aplicação (programa) fazia tudo, ou seja, interagia com o 
+usuário, fazia os cálculos e armazenava em arquivos. Porém, foram sendo
+identificadas funcionalidades comuns a muitos programas. Logo, para manter 
+grandes repositórios compartilhados de dados, ou seja, para manter bancos de
+dados, são usados sistemas de gerência de banco de dados (SGBD).</p>
+<p>No mercado, há vários tipos de SGBD. Aqui, nos concentramos em um tipo de 
+SGBD, <strong>o relacional</strong>, que domina o mercado da atualidade.</p>
+<h2 id="sbd">SBD</h2>
+<p>Um <strong>Sistema de Banco de Dados (SBD)</strong> é sistema computacional criado para 
+suportar/automatizar as operações de um determinado universo de discurso,
+composto pelo banco de dados, por estruturas de armazenamento e mecanismos
+para a manipulação de dados e informações (BD, SGBD e programas de aplicação).</p>
+<p><img alt="Banco de dados" src="../images/sbd-sgbd-bd.svg"/></p>
+<h2 id="modelo-de-banco-de-dados">Modelo de banco de dados</h2>
+<p><strong>Modelo de (banco) dados:</strong> descrição formal da estrutura de um banco de dados.</p>
+<p>Usa-se linguagens para modelar um banco de dados, essas linguagens são 
+<strong>gráficas ou textuais</strong>. Um mesmo modelo pode ser apresentado de várias 
+formas.</p>
+<h3 id="niveis-de-modelos">Níveis de modelos</h3>
+<p>Podemos colocar modelos em alguns níveis (alto, médio e baixo por exemplo).</p>
+<p>Quanto mais alto o nível, mais longe (independente) de um BD final é o modelo. 
+Modelos de alto nível são bem interessante para ter uma visão geral de um banco de
+dados; já modelos de baixo nível estão mais próximos do BD (dependente) final, 
+existem mais detalhes para evitar discordância, confusão ou até ambiguidade,
+porém são  modelos que geram mais textos, detalhes e portanto ficam mais 
+complexos.</p>
+<h3 id="modelo-conceitual-nivel-alto">Modelo conceitual (nível alto)</h3>
+<p>A técnica mais difundida de modelagem conceitual é a abordagem 
+<strong>entidade-relacionamento (ER)</strong>. Nesta técnica, um modelo conceitual é usualmente
+representado através de um diagrama, chamado <strong>diagrama entidade-relacionamento
+(DER)</strong>.</p>
+<p><img alt="Banco de dados" src="../images/diag-entidade-relacionamento.svg"/></p>
+<h4 id="exercicio-para-proxima-aula-1">Exercício para próxima aula 1</h4>
+<p>Escolha no mínimo 4 entidades para gerar um diagrama de entidade 
+relacionamento.</p>
+<h3 id="modelo-logico-nivel-intermediario">Modelo lógico (nível intermediário)</h3>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../aula1/" rel="prev" title="Aula 1 (2019-04-02)">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Aula 1 (2019-04-02)
+              </span>
+</div>
+</a>
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../aula3/" rel="next" title="Aula 3 (2019-04-09)">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Aula 3 (2019-04-09)
+              </span>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../assets/javascripts/application.dc02f8ce.js"></script>
+<script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+<script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+<script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+</body>
+</html>
