@@ -117,7 +117,7 @@ existem mais detalhes para evitar discordância, confusão ou até ambiguidade,
 porém são  modelos que geram mais textos, detalhes e portanto ficam mais 
 complexos.
 
-### Modelo conceitual (alto nível)
+### Modelo conceitual (nível alto)
 
 A técnica mais difundida de modelagem conceitual é a abordagem 
 **entidade-relacionamento (ER)**. Nesta técnica, um modelo conceitual é usualmente
@@ -126,9 +126,9 @@ representado através de um diagrama, chamado **diagrama entidade-relacionamento
 
 ![Banco de dados](images/diag-entidade-relacionamento.svg)
 
-#### Exercício para próxima aula 1.
+#### Exercício para próxima aula 1
 
 Escolha no mínimo 4 entidades para gerar um diagrama de entidade 
 relacionamento.
 
-### Modelo lógico (nivel intermediário) 
+### Modelo lógico (nível intermediário) 
