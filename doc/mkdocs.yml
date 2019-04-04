@@ -10,6 +10,8 @@ markdown_extensions:
 nav:
 - Introdução: index.md
 - Aula 1 (2019-04-02): aula1.md
+- Aula 2 (2019-04-04): aula2.md
+- Aula 3 (2019-04-09): aula3.md
 
 plugins:
   - search
