@@ -1,173 +1,762 @@
 
-<!DOCTYPE doctype html>
 
-<html class="no-js" lang="pt">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Disciplina de banco de dados" name="description"/>
-<link href="https://github.com/allainclair/aula3/" rel="canonical"/>
-<meta content="Allainclair Flausino dos Santos" name="author"/>
-<meta content="Copiar para área de transferência" name="lang:clipboard.copy"/>
-<meta content="Copiado para área de transferência" name="lang:clipboard.copied"/>
-<meta content="en, pt" name="lang:search.language"/>
-<meta content="True" name="lang:search.pipeline.stopwords"/>
-<meta content="True" name="lang:search.pipeline.trimmer"/>
-<meta content="Nenhum resultado encontrado" name="lang:search.result.none"/>
-<meta content="1 resultado encontrado" name="lang:search.result.one"/>
-<meta content="# resultados encontrados" name="lang:search.result.other"/>
-<meta content="[\s\-]+" name="lang:search.tokenizer"/>
-<link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.0.4, mkdocs-material-4.1.1" name="generator"/>
-<title>Aula 3 (2019-04-09) - Banco de dados</title>
-<link href="../assets/stylesheets/application.3020aac5.css" rel="stylesheet"/>
-<script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
-<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
-</head>
-<body dir="ltr">
-<svg class="md-svg">
-<defs>
-</defs>
-</svg>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<header class="md-header" data-md-component="header">
-<nav class="md-header-nav md-grid">
-<div class="md-flex">
-<div class="md-flex__cell md-flex__cell--shrink">
-<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
-<i class="md-icon"></i>
-</a>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch">
-<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-<span class="md-header-nav__topic">
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Disciplina de banco de dados">
+      
+      
+        <link rel="canonical" href="https://github.com/allainclair/aula3/">
+      
+      
+        <meta name="author" content="Allainclair Flausino dos Santos">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="en, pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+    
+    
+      
+        <title>Aula 3 (2019-04-09) - Banco de dados</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#projeto-de-banco-de-dados" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/allainclair" title="Banco de dados" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
               Banco de dados
             </span>
-<span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
               Aula 3 (2019-04-09)
             </span>
-</div>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
 <div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Buscar" spellcheck="false" type="text"/>
-<label class="md-icon md-search__icon" for="__search"></label>
-<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
-        
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
       </button>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="result">
-<div class="md-search-result__meta">
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Digite para iniciar a busca
           </div>
-<ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</nav>
+        
+      </div>
+      
+    </div>
+  </nav>
 </header>
-<div class="md-container">
-<main class="md-main">
-<div class="md-main__inner md-grid" data-md-component="container">
-<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
-<i class="md-icon"></i>
-</a>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/allainclair" title="Banco de dados" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
     Banco de dados
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href=".." title="Introdução">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introdução" class="md-nav__link">
       Introdução
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../aula1/" title="Aula 1 (2019-04-02)">
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula1/" title="Aula 1 (2019-04-02)" class="md-nav__link">
       Aula 1 (2019-04-02)
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../aula2/" title="Aula 2 (2019-04-04)">
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula2/" title="Aula 2 (2019-04-04)" class="md-nav__link">
       Aula 2 (2019-04-04)
     </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./" title="Aula 3 (2019-04-09)">
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 3 (2019-04-09)
+      </label>
+    
+    <a href="./" title="Aula 3 (2019-04-09)" class="md-nav__link md-nav__link--active">
       Aula 3 (2019-04-09)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-de-banco-de-dados" title="Projeto de banco de dados" class="md-nav__link">
+    Projeto de banco de dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-banco-de-dados" title="Modelo de banco de dados" class="md-nav__link">
+    Modelo de banco de dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-conceitual-nivel-alto" title="Modelo conceitual (nível alto)" class="md-nav__link">
+    Modelo conceitual (nível alto)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-21-para-casa" title="Exercício 2.1 para casa" class="md-nav__link">
+    Exercício 2.1 para casa
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-logico-nivel-intermediario" title="Modelo lógico (nível intermediário)" class="md-nav__link">
+    Modelo lógico (nível intermediário)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-22-para-casa" title="Exercício 2.2 para casa" class="md-nav__link">
+    Exercício 2.2 para casa
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-de-bd" title="Projeto de BD" class="md-nav__link">
+    Projeto de BD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-idependente-do-sgdb" title="Modelagem idependente do SGDB" class="md-nav__link">
+    Modelagem idependente do SGDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-dependente-do-sgdb" title="Modelagem dependente do SGDB" class="md-nav__link">
+    Modelagem dependente do SGDB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula4/" title="Aula 4 (2019-04-11)" class="md-nav__link">
+      Aula 4 (2019-04-11)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula5.md" title="Aula 5 (2019-04-16)" class="md-nav__link">
+      Aula 5 (2019-04-16)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
+      Exercícios 1
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-de-banco-de-dados" title="Projeto de banco de dados" class="md-nav__link">
+    Projeto de banco de dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-banco-de-dados" title="Modelo de banco de dados" class="md-nav__link">
+    Modelo de banco de dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-conceitual-nivel-alto" title="Modelo conceitual (nível alto)" class="md-nav__link">
+    Modelo conceitual (nível alto)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-21-para-casa" title="Exercício 2.1 para casa" class="md-nav__link">
+    Exercício 2.1 para casa
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-logico-nivel-intermediario" title="Modelo lógico (nível intermediário)" class="md-nav__link">
+    Modelo lógico (nível intermediário)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-22-para-casa" title="Exercício 2.2 para casa" class="md-nav__link">
+    Exercício 2.2 para casa
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projeto-de-bd" title="Projeto de BD" class="md-nav__link">
+    Projeto de BD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-idependente-do-sgdb" title="Modelagem idependente do SGDB" class="md-nav__link">
+    Modelagem idependente do SGDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelagem-dependente-do-sgdb" title="Modelagem dependente do SGDB" class="md-nav__link">
+    Modelagem dependente do SGDB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Aula 3 (2019-04-09)</h1>
+                
+                <h2 id="projeto-de-banco-de-dados">Projeto de banco de dados</h2>
+<h2 id="modelo-de-banco-de-dados">Modelo de banco de dados</h2>
+<ul>
+<li>
+<p><strong>Modelo de (banco) dados:</strong> descrição formal da estrutura de um banco de 
+dados;</p>
+</li>
+<li>
+<p>Cada apresentação do modelo recebe a denominação <strong>esquema de banco de 
+dados</strong>;</p>
+</li>
+<li>
+<p>Um mesmo modelo pode ser apresentados em diferentes esquemas. Um esquema é
+  <strong>descrição</strong> do modelo; o modelo é o que engloba (abstrai) os esquemas. 
+  Basicamente um mesmo modelo é apresentado por vários esquemas;</p>
+</li>
+<li>
+<p>Desafio: mapear um minimundo para um modelo de banco. Muitos consguem usar
+  um banco de dados, pouco conseguem modelar o banco consistente. Se você 
+  tiver essa competência, será um diferencial, pois os conceitos de 
+  modelagem de banco podem ser extendidos para outras disciplinas/domínios.</p>
 </li>
 </ul>
-</nav>
+<h2 id="modelo-conceitual-nivel-alto">Modelo conceitual (nível alto)</h2>
+<p>A técnica mais difundida de modelagem conceitual é a abordagem 
+<strong>entidade-relacionamento (ER)</strong>. Nesta técnica, um modelo conceitual é usualmente
+representado através de um diagrama, chamado <strong>diagrama entidade-relacionamento
+(DER)</strong>.</p>
+<ul>
+<li>Retângulos são <strong>entidades</strong>;</li>
+<li>Elipses são <strong>atributos</strong>;</li>
+<li>Losangos são <strong>relacionamentos</strong> que também podem ser nomeados;</li>
+<li>As cardinalidades são indicadas com número ou letra (1, n, m por exemplo);</li>
+<li>
+<p>Atributos sublinhados indicam atributo único, isto é, não pode existir 
+  repetição dentro de uma tabela da coluna desse atributo. Isso ajuda a 
+  identificar de forma <strong>única</strong> uma entidade.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 3.3</p>
+<p>Uma entidade quando levada para um DB (populado) gera <strong>instâncias</strong> 
+para o banco de dados. Por exemplo, uma entidade produto tem um 
+atributo nome = "iPhone" quando o DB é populado.</p>
+<p>Dessa forma, um código único (atributo único) deve ser atribuído para 
+esse iPhone (1 por exemplo); pois uma instância de produto com nome 
+"Galaxy" não pode ter o mesmo código.</p>
+<p>Isso gera uma identidade única para cada instância da tabela Produto
+do banco de dados.</p>
 </div>
+</li>
+</ul>
+<p>A figura a seguir ilustra um DER de duas entidades: <strong>Produto</strong> e <strong>Tipo de 
+Produto</strong>.</p>
+<p><img alt="Banco de dados" src="../images/diag-entidade-relacionamento.svg" /> </p>
+<h3 id="exercicio-21-para-casa">Exercício 2.1 para casa</h3>
+<p>Gerar um diagrama de entidade e relacionamento com as seguintes entidades:
+Aluno, Disciplina, Professor e Curso. Use poucos atributos nas entidades. </p>
+<h2 id="modelo-logico-nivel-intermediario">Modelo lógico (nível intermediário)</h2>
+<p>Um modelo lógico é uma descrição de um banco de dados no nível de abstração
+visto pelo usuário do SGBD. Assim, o modelo lógico é <strong>dependente do tipo
+particular de SGBD</strong> que está sendo usado.</p>
+<p>Em um SGBD relacional, os dados estão organizados na forma de <strong>tabelas</strong>. 
+As o esquema e tabelas a seguir são das entidades  <strong>Tipo de Produdo</strong> e
+<strong>Produto</strong> respectivamente. </p>
+<p><strong>TipoDeProduto</strong>(<u>CodigoTipoProduto</u>, DescTipoProduto)</p>
+<p><strong>Produto</strong>(<u>CodigoProduto</u>, DescProduto, PrecoProduto, CodigoTipoProduto)</p>
+<ul>
+<li><strong>CodigoTipoProduto</strong> referencia a entidade TipoDeProduto.</li>
+</ul>
+<p><strong>TipoDeProduto:</strong></p>
+<table>
+<thead>
+<tr>
+<th>CodigoTipoProduto</th>
+<th>DescTipoProduto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Computador</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Impressora</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Produto:</strong></p>
+<table>
+<thead>
+<tr>
+<th>CodigoProduto</th>
+<th>DescProduto</th>
+<th>PrecoProduto</th>
+<th>CodigoTipoProduto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>iMac</td>
+<td>20.000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dell</td>
+<td>5.000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Jato de tinta</td>
+<td>1.000</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Laser</td>
+<td>2.000</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercicio-22-para-casa">Exercício 2.2 para casa</h3>
+<p>Gerar o esquema lógico do exercídio 2.1.</p>
+<h2 id="projeto-de-bd">Projeto de BD</h2>
+<p>Duas fases:</p>
+<ul>
+<li>Modelagem conceitual;</li>
+<li>Projeto lógico.</li>
+</ul>
+<h3 id="modelagem-idependente-do-sgdb">Modelagem idependente do SGDB</h3>
+<ol>
+<li>
+<p>Levantamento e análise de requisitos</p>
+<p>Levantamento de requisitos é parte primeira no projeto do banco de dados
+que se for não for bem feito, pode levar facilmanente à ruína do sistema
+de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
+projeto do banco é constante enquanto é pertinente. Deve ser feito 
+sempre que for necessário para o mesmo banco.</p>
+<p>1.1 Requisitos funcionais;</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 3.1</p>
+<p>Uma relatório de notas do alunos deve ser mostrado ao usuário do
+sistema junto com a disciplina e professor responsável pela 
+disciplina.</p>
+<hr />
+<p>Questões:</p>
+<ul>
+<li>Quais notas? Todas as notas? Notas de prova e trabalhos?</li>
+<li>Mostrar apenas nome do aluno, ou mostrar também seu RA?</li>
+</ul>
 </div>
+<p>1.1 Requisitos de dados;</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 3.2</p>
+<p>Cada professor pode ter mais do que uma disciplina, e uma disciplina
+pode ter até 3 professor;</p>
+<p>Papel do projetista perguntar e questionar esses tipso de requisitos 
+de dados.</p>
 </div>
-<div class="md-content">
-<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="aula3.pdf" title="PDF Export"></a>
-<h1>Aula 3 (2019-04-09)</h1>
-</article>
+</li>
+<li>
+<p>Análise funcional</p>
+<p>2.1 Especificação de transação de alto nível.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemplo 3.3</p>
+<p>O usuário do banco de dados deve "selecionar" as entidades professor, 
+aluno, disciplina e notas; relacionar essas entidades fazendo 
+"junções" delas para mostrar de forma tabular as notas dos alunos.</p>
 </div>
-</div>
-</main>
+</li>
+<li>
+<p>Projeto conceitual</p>
+<p>3.1 Modelo conceitutal: um diagrama (esquema) de entidade-relacionamento.</p>
+</li>
+</ol>
+<h3 id="modelagem-dependente-do-sgdb">Modelagem dependente do SGDB</h3>
+<ol>
+<li>
+<p>Projeto lógico: esquema lógico → projeto físico;</p>
+</li>
+<li>
+<p>Projeto do programa de aplicação → implementação das transações;</p>
+</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
 <footer class="md-footer">
-<div class="md-footer-nav">
-<nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../aula2/" rel="prev" title="Aula 2 (2019-04-04)">
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../aula2/" title="Aula 2 (2019-04-04)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
                   Anterior
                 </span>
                 Aula 2 (2019-04-04)
               </span>
-</div>
-</a>
-</nav>
-</div>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
+            </div>
+          </a>
+        
+        
+          <a href="../aula4/" title="Aula 4 (2019-04-11)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Aula 4 (2019-04-11)
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-</div>
-</div>
-</div>
+      </div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<script src="../assets/javascripts/application.dc02f8ce.js"></script>
-<script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
-<script src="../assets/javascripts/lunr/lunr.pt.js"></script>
-<script src="../assets/javascripts/lunr/lunr.multi.js"></script>
-<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-</body>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
 </html>
