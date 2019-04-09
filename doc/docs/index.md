@@ -13,6 +13,7 @@
 
 * **Site:** [https://allainclair.github.io/disc-bancodados/](
   https://allainclair.github.io/disc-bancodados/)
+* **Contato da turma:** ?
 
 ## Avaliação (projeto)
 

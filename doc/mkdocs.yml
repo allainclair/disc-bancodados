@@ -12,10 +12,12 @@ nav:
 - Aula 1 (2019-04-02): aula1.md
 - Aula 2 (2019-04-04): aula2.md
 - Aula 3 (2019-04-09): aula3.md
+- Aula 4 (2019-04-11): aula4.md
+- Aula 5 (2019-04-16): aula5.md
+- Exercícios 1: exercicios1.md
 
 plugins:
   - search
-  - pdf-export
 
 site_name: Banco de dados
 site_description: Disciplina de banco de dados
