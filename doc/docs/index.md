@@ -1,5 +1,9 @@
 # Disciplina de Banco de dados
 
+## **Avisos**
+
+Alunos com plano de aula enviar um email para mim informando o conflito de 
+disciplinas.
 
 ## Professor
 
