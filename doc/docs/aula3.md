@@ -12,11 +12,10 @@ dados**;
   **descrição** do modelo; o modelo é o que engloba (abstrai) os esquemas. 
   Basicamente um mesmo modelo é apresentado por vários esquemas;
 
-* Desafio: mapear um minimundo para um modelo de banco. Muitos consguem usar
+* Desafio: mapear um minimundo para um modelo de banco. Muitos conseguem usar
   um banco de dados, pouco conseguem modelar o banco consistente. Se você 
   tiver essa competência, será um diferencial, pois os conceitos de 
-  modelagem de banco podem ser extendidos para outras disciplinas/domínios.
- 
+  modelagem de banco podem ser estendidos para outras disciplinas/domínios.
 
 ## Modelo conceitual (nível alto)
 
@@ -128,7 +127,7 @@ As o esquema e tabelas a seguir são das entidades  **Tipo de Produdo** e
 
 ### Exercício 2.2 para casa
 
-Gerar o esquema lógico do exercídio 2.1.
+Gerar o esquema lógico do exercício 2.1.
 
 ### Atributos 
 
@@ -157,65 +156,3 @@ partes (em outros atributos).
 
 * nome_cliente: prenome, nome_intermediário e sobrenome;
 * Estes atributos podem ser hierarquizados.
-
-## Projeto de BD
-
-Duas fases:
-
-* Modelagem conceitual;
-* Projeto lógico.
-
-### Modelagem idependente do SGDB
-
-1. Levantamento e análise de requisitos
- 
-    Levantamento de requisitos é parte primeira no projeto do banco de dados
-    que se for não for bem feito, pode levar facilmanente à ruína do sistema
-    de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
-    projeto do banco é constante enquanto é pertinente. Deve ser feito 
-    sempre que for necessário para o mesmo banco.
-    
-    A descrição deve ser concisa dos requisitos de dados para evitar 
-    interpretações erradas.
-
-    1.1 Requisitos funcionais;
-
-    !!! example "Exemplo 3.1"
-        Uma relatório de notas do alunos deve ser mostrado ao usuário do
-        sistema junto com a disciplina e professor responsável pela 
-        disciplina.
-        ---
-        Questões:
-        
-        * Quais notas? Todas as notas? Notas de prova e trabalhos?
-        * Mostrar apenas nome do aluno, ou mostrar também seu RA?
-    
-
-    1.1 Requisitos de dados;
-    
-    !!! example "Exemplo 3.2"
-        Cada professor pode ter mais do que uma disciplina, e uma disciplina
-        pode ter até 3 professor;
-
-        Papel do projetista perguntar e questionar esses tipso de requisitos 
-        de dados.
-
-2. Análise funcional
-
-    2.1 Especificação de transação de alto nível.
-    
-    !!! example "Exemplo 3.3"
-        O usuário do banco de dados deve "selecionar" as entidades professor, 
-        aluno, disciplina e notas; relacionar essas entidades fazendo 
-        "junções" delas para mostrar de forma tabular as notas dos alunos.
-        
-
-3. Projeto conceitual
-
-    3.1 Modelo conceitutal: um diagrama (esquema) de entidade-relacionamento.
- 
-### Modelagem dependente do SGDB
- 
-1. Projeto lógico: esquema lógico → projeto físico;
-
-2. Projeto do programa de aplicação → implementação das transações;

@@ -255,6 +255,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#entidades" title="Entidades" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#exercicio-21-para-casa" title="Exercício 2.1 para casa" class="md-nav__link">
     Exercício 2.1 para casa
   </a>
@@ -278,6 +285,26 @@
   <a href="#exercicio-22-para-casa" title="Exercício 2.2 para casa" class="md-nav__link">
     Exercício 2.2 para casa
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos" title="Atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-simples-ou-compostos" title="Atributos simples ou compostos" class="md-nav__link">
+    Atributos simples ou compostos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -401,6 +428,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#entidades" title="Entidades" class="md-nav__link">
+    Entidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#exercicio-21-para-casa" title="Exercício 2.1 para casa" class="md-nav__link">
     Exercício 2.1 para casa
   </a>
@@ -424,6 +458,26 @@
   <a href="#exercicio-22-para-casa" title="Exercício 2.2 para casa" class="md-nav__link">
     Exercício 2.2 para casa
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos" title="Atributos" class="md-nav__link">
+    Atributos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-simples-ou-compostos" title="Atributos simples ou compostos" class="md-nav__link">
+    Atributos simples ou compostos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -502,12 +556,33 @@ dados</strong>;</p>
 </li>
 </ul>
 <h2 id="modelo-conceitual-nivel-alto">Modelo conceitual (nível alto)</h2>
-<p>A técnica mais difundida de modelagem conceitual é a abordagem 
-<strong>entidade-relacionamento (ER)</strong>. Nesta técnica, um modelo conceitual é usualmente
-representado através de um diagrama, chamado <strong>diagrama entidade-relacionamento
-(DER)</strong>.</p>
 <ul>
-<li>Retângulos são <strong>entidades</strong>;</li>
+<li>
+<p>A base do modelo entidade-relacionamento (MER), é representar o mundo real
+  por meio de conjuntos de objetos chamados <strong>entidades</strong> e 
+  <strong>relacionamentos</strong>;</p>
+</li>
+<li>
+<p>A junção ordenada/lógica destes tipos de objetos representa a estrutura/esquema
+  do mundo real. Ou seja, deve suportar o armazenamento de dados que reflitam a
+  situação do mundo real;</p>
+</li>
+<li>
+<p>A técnica mais difundida de modelagem conceitual é essa abordagem 
+  <strong>entidade-relacionamento (ER)</strong>. Nesta técnica, um modelo conceitual é usualmente
+  representado através de um diagrama, chamado <strong>diagrama entidade-relacionamento
+  (DER)</strong>.</p>
+</li>
+<li>
+<p>Ajuda na comunicação com os usuários não-técnicos;</p>
+</li>
+<li>
+<p>As três noções básicas empregadas pelo MER: conjunto de entidades, conjunto 
+  de relacionamentos, atributos;</p>
+</li>
+<li>
+<p>Retângulos são <strong>entidades</strong>;</p>
+</li>
 <li>Elipses são <strong>atributos</strong>;</li>
 <li>Losangos são <strong>relacionamentos</strong> que também podem ser nomeados;</li>
 <li>As cardinalidades são indicadas com número ou letra (1, n, m por exemplo);</li>
@@ -531,9 +606,29 @@ do banco de dados.</p>
 <p>A figura a seguir ilustra um DER de duas entidades: <strong>Produto</strong> e <strong>Tipo de 
 Produto</strong>.</p>
 <p><img alt="Banco de dados" src="../images/diag-entidade-relacionamento.svg" /> </p>
+<h3 id="entidades">Entidades</h3>
+<p>Definições:</p>
+<ul>
+<li>Uma entidade é uma “coisa” ou um “objeto” do mundo real que pode ser 
+  identificada(o) de uma forma unívoca em relação a todos os outros objetos 
+  (<a href="https://www.google.com/search?q=Sistemas+de+Banco+de+Dados.+Silberschatz%2C+Korth+e+Sudarshan.+Makron+Books%2C+Segunda+Edi%C3%A7%C3%A3o.&amp;oq=Sistemas+de+Banco+de+Dados.+Silberschatz%2C+Korth+e+Sudarshan.+Makron+Books%2C+Segunda+Edi%C3%A7%C3%A3o.&amp;aqs=chrome..69i57.1458j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Korth</a>);</li>
+<li>Uma entidade pode ser concreta, como uma pessoa ou um livro, ou pode ser 
+  abstrata, como um empréstimo ou uma viagem (Korth);</li>
+<li>Uma entidade é “algo” do mundo real, com uma existência independente 
+  (<a href="https://www.google.com/search?q=Sistemas+de+Banco+de+Dados.+Elsmari+e+Navathe.+Pearson-Addison+Wesley%2C+Quarta+Edi%C3%A7%C3%A3o.&amp;oq=Sistemas+de+Banco+de+Dados.+Elsmari+e+Navathe.+Pearson-Addison+Wesley%2C+Quarta+Edi%C3%A7%C3%A3o.&amp;aqs=chrome..69i57.186j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Navathe</a>).</li>
+</ul>
+<p>Entidades não são, necessariamente, conjuntos separados ou sempre disjuntos.
+Por exemplo:</p>
+<ul>
+<li>O conjunto de todos os clientes de um banco constituem o conjunto entidade
+  cliente; o conjunto de todos os empregados do banco constituem o conjunto
+  entidade empregado; a entidade pessoa pode pertencer ou ao conjunto cliente,
+  ou ao conjunto empregado ou a ambos ou a nenhum deles.</li>
+</ul>
+<p><img alt="Banco de dados" src="../images/entidade-conjunto.svg" /></p>
 <h3 id="exercicio-21-para-casa">Exercício 2.1 para casa</h3>
 <p>Gerar um diagrama de entidade e relacionamento com as seguintes entidades:
-Aluno, Disciplina, Professor e Curso. Use poucos atributos nas entidades. </p>
+Aluno, Disciplina, Professor e Curso. Use poucos atributos nas entidades.</p>
 <h2 id="modelo-logico-nivel-intermediario">Modelo lógico (nível intermediário)</h2>
 <p>Um modelo lógico é uma descrição de um banco de dados no nível de abstração
 visto pelo usuário do SGBD. Assim, o modelo lógico é <strong>dependente do tipo
@@ -604,6 +699,43 @@ As o esquema e tabelas a seguir são das entidades  <strong>Tipo de Produdo</str
 </table>
 <h3 id="exercicio-22-para-casa">Exercício 2.2 para casa</h3>
 <p>Gerar o esquema lógico do exercídio 2.1.</p>
+<h3 id="atributos">Atributos</h3>
+<ul>
+<li>
+<p>Propriedades particulares que descrevem uma entidade;</p>
+</li>
+<li>
+<p>Para cada atributo existe um conjunto de valores possíveis, chamado domínio;</p>
+</li>
+<li>
+<p>Domínio -&gt; tipos de dados (inteiro, decimal, etc)</p>
+</li>
+</ul>
+<p>Tipos de atributos que ocorrem no modelo ER:</p>
+<ul>
+<li>
+<p>Simples e Compostos;</p>
+</li>
+<li>
+<p>Univalorados e Multivalorados;</p>
+</li>
+<li>
+<p>Nulos;</p>
+</li>
+<li>
+<p>Armazenados versus Derivados;</p>
+</li>
+<li>
+<p>Atributos Complexos.</p>
+</li>
+</ul>
+<h4 id="atributos-simples-ou-compostos">Atributos simples ou compostos</h4>
+<p>atributos compostos, diferentemente dos simples (atômicos), são divididos em
+partes (em outros atributos).</p>
+<ul>
+<li>nome_cliente: prenome, nome_intermediário e sobrenome;</li>
+<li>Estes atributos podem ser hierarquizados.</li>
+</ul>
 <h2 id="projeto-de-bd">Projeto de BD</h2>
 <p>Duas fases:</p>
 <ul>
@@ -619,6 +751,8 @@ que se for não for bem feito, pode levar facilmanente à ruína do sistema
 de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
 projeto do banco é constante enquanto é pertinente. Deve ser feito 
 sempre que for necessário para o mesmo banco.</p>
+<p>A descrição deve ser concisa dos requisitos de dados para evitar 
+interpretações erradas.</p>
 <p>1.1 Requisitos funcionais;</p>
 <div class="admonition example">
 <p class="admonition-title">Exemplo 3.1</p>

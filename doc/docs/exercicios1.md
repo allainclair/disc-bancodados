@@ -1,4 +1,4 @@
-## 1.1 Uma aplicação de banco de dados chamado EMPRESA. 
+## 1.2 Uma aplicação de banco de dados chamado EMPRESA. 
 
 A empresa está organizada em departamentos. Cada departamento tem um nome único,
 um número único, pode ter diversas localizações e um empregado que gerencia o
