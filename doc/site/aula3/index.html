@@ -313,33 +313,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#projeto-de-bd" title="Projeto de BD" class="md-nav__link">
-    Projeto de BD
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modelagem-idependente-do-sgdb" title="Modelagem idependente do SGDB" class="md-nav__link">
-    Modelagem idependente do SGDB
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modelagem-dependente-do-sgdb" title="Modelagem dependente do SGDB" class="md-nav__link">
-    Modelagem dependente do SGDB
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -383,6 +356,18 @@
   <li class="md-nav__item">
     <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
       Exercícios 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resolvidos1/" title="Resolvidos 1" class="md-nav__link">
+      Resolvidos 1
     </a>
   </li>
 
@@ -486,33 +471,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#projeto-de-bd" title="Projeto de BD" class="md-nav__link">
-    Projeto de BD
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modelagem-idependente-do-sgdb" title="Modelagem idependente do SGDB" class="md-nav__link">
-    Modelagem idependente do SGDB
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modelagem-dependente-do-sgdb" title="Modelagem dependente do SGDB" class="md-nav__link">
-    Modelagem dependente do SGDB
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -549,10 +507,10 @@ dados</strong>;</p>
   Basicamente um mesmo modelo é apresentado por vários esquemas;</p>
 </li>
 <li>
-<p>Desafio: mapear um minimundo para um modelo de banco. Muitos consguem usar
+<p>Desafio: mapear um minimundo para um modelo de banco. Muitos conseguem usar
   um banco de dados, pouco conseguem modelar o banco consistente. Se você 
   tiver essa competência, será um diferencial, pois os conceitos de 
-  modelagem de banco podem ser extendidos para outras disciplinas/domínios.</p>
+  modelagem de banco podem ser estendidos para outras disciplinas/domínios.</p>
 </li>
 </ul>
 <h2 id="modelo-conceitual-nivel-alto">Modelo conceitual (nível alto)</h2>
@@ -698,7 +656,7 @@ As o esquema e tabelas a seguir são das entidades  <strong>Tipo de Produdo</str
 </tbody>
 </table>
 <h3 id="exercicio-22-para-casa">Exercício 2.2 para casa</h3>
-<p>Gerar o esquema lógico do exercídio 2.1.</p>
+<p>Gerar o esquema lógico do exercício 2.1.</p>
 <h3 id="atributos">Atributos</h3>
 <ul>
 <li>
@@ -736,69 +694,6 @@ partes (em outros atributos).</p>
 <li>nome_cliente: prenome, nome_intermediário e sobrenome;</li>
 <li>Estes atributos podem ser hierarquizados.</li>
 </ul>
-<h2 id="projeto-de-bd">Projeto de BD</h2>
-<p>Duas fases:</p>
-<ul>
-<li>Modelagem conceitual;</li>
-<li>Projeto lógico.</li>
-</ul>
-<h3 id="modelagem-idependente-do-sgdb">Modelagem idependente do SGDB</h3>
-<ol>
-<li>
-<p>Levantamento e análise de requisitos</p>
-<p>Levantamento de requisitos é parte primeira no projeto do banco de dados
-que se for não for bem feito, pode levar facilmanente à ruína do sistema
-de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
-projeto do banco é constante enquanto é pertinente. Deve ser feito 
-sempre que for necessário para o mesmo banco.</p>
-<p>A descrição deve ser concisa dos requisitos de dados para evitar 
-interpretações erradas.</p>
-<p>1.1 Requisitos funcionais;</p>
-<div class="admonition example">
-<p class="admonition-title">Exemplo 3.1</p>
-<p>Uma relatório de notas do alunos deve ser mostrado ao usuário do
-sistema junto com a disciplina e professor responsável pela 
-disciplina.</p>
-<hr />
-<p>Questões:</p>
-<ul>
-<li>Quais notas? Todas as notas? Notas de prova e trabalhos?</li>
-<li>Mostrar apenas nome do aluno, ou mostrar também seu RA?</li>
-</ul>
-</div>
-<p>1.1 Requisitos de dados;</p>
-<div class="admonition example">
-<p class="admonition-title">Exemplo 3.2</p>
-<p>Cada professor pode ter mais do que uma disciplina, e uma disciplina
-pode ter até 3 professor;</p>
-<p>Papel do projetista perguntar e questionar esses tipso de requisitos 
-de dados.</p>
-</div>
-</li>
-<li>
-<p>Análise funcional</p>
-<p>2.1 Especificação de transação de alto nível.</p>
-<div class="admonition example">
-<p class="admonition-title">Exemplo 3.3</p>
-<p>O usuário do banco de dados deve "selecionar" as entidades professor, 
-aluno, disciplina e notas; relacionar essas entidades fazendo 
-"junções" delas para mostrar de forma tabular as notas dos alunos.</p>
-</div>
-</li>
-<li>
-<p>Projeto conceitual</p>
-<p>3.1 Modelo conceitutal: um diagrama (esquema) de entidade-relacionamento.</p>
-</li>
-</ol>
-<h3 id="modelagem-dependente-do-sgdb">Modelagem dependente do SGDB</h3>
-<ol>
-<li>
-<p>Projeto lógico: esquema lógico → projeto físico;</p>
-</li>
-<li>
-<p>Projeto do programa de aplicação → implementação das transações;</p>
-</li>
-</ol>
                 
                   
                 

@@ -201,7 +201,7 @@ Mundo real: uma instituição financeira (simplificada)
   para cada uma das entidades do conjunto entidade;
 * Esse atributo é chamado **atributo-chave**.
 
-Exempos:
+Exemplos:
 
 * Departamento
 
@@ -232,38 +232,3 @@ Exempos:
 
 * **Atributo multivalorado:** {atributo_multivalorado}
     * ex: {dependentes}
-
-## **Sugestão de implementação de BANCO SQL dessas tabelas para logo**
-
-
-## Relacionamentos    
-
-* Um atributo de uma entidade refere-se a outra entidade;
-
-* Refinamento: atributos são convertidos em relacionamentos entre as entidades;
-
-* Um relacionamento é uma associação entre uma ou
-várias entidades:
-
-    * Um relacionamento que associa o cliente H com o empréstimo L-15
-      especifica que o cliente H é o cliente que realizou o referido
-      empréstimo.
-
-* Tipo Relacionamento define um conjunto de associações ou um conjunto de
-  relacionamentos entre entidades;
-
-* A associação entre os conjuntos de entidades é referida como uma
-  participação: o conjunto de entidades **E1 , E2 , ..., Em** **participa** do
-  conjunto de relacionamentos **R**;
-
-* Grau do relacionamento: o relacionamento binário (envolve dois
-  conjuntos entidades) é um relacionamento de grau 2. E assim
-  por diante;
-
-* Exemplo:
-    * Considere os conjuntos de entidades cliente e empréstimo;
-    * Definimos o conjunto de relacionamentos devedor para denotar a
-      associação entre clientes e empréstimos bancários contraídos pelos
-      clientes.
-
-![relacionamento1](images/relacionamento1.jpg)
