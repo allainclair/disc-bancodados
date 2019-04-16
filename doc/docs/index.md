@@ -15,9 +15,10 @@ disciplinas.
 
 ## Disciplina
 
+* **Contato da turma:** ?
+* **Local**: Bloco E90, sala 1
 * **Site:** [https://allainclair.github.io/disc-bancodados/](
   https://allainclair.github.io/disc-bancodados/)
-* **Contato da turma:** ?
 
 ## Avaliação (projeto)
 
@@ -47,7 +48,7 @@ Estudo de modelos de banco de dados e conceitos envolvidos na sua utilização.
  banco de dados;
 * Estudar linguagens de definição e consulta a bancos de dados;
 * Estudar requisitos funcionais e modelos de dados;
-* Estudar abordagens convencionais (sistema gerenciador de banco de dados 
+* Estudar abordagens convencionais (sistema gerenciador de banco de dados
 (SGBD) relacional e hierárquico);
 * Introduzir abordagens não-convencionais (SGBD OO).
 
@@ -65,7 +66,7 @@ Estudo de modelos de banco de dados e conceitos envolvidos na sua utilização.
     4.3. Modelo Orientado a Objetos
 
 5. Linguagens de definição e consulta para BD Relacional
-    
+
     5.1. Álgebra relacional
 
     5.2. Linguagem relacional de alto-nível (SQL)
@@ -73,26 +74,26 @@ Estudo de modelos de banco de dados e conceitos envolvidos na sua utilização.
 6. Implementação de um sistema computadorizado utilizando um SGBD
 
 ### Referências
- 
+
 Básicas (Disponibilizadas na Biblioteca ou aquisições recomendadas)
 
-Date, C. J. Introdução a Sistemas de Banco de Dados, Oitava edição, Campus, 
+Date, C. J. Introdução a Sistemas de Banco de Dados, Oitava edição, Campus,
 2004;
 
 Elmasri, R.; Shamkant, B. N. Sistemas de Banco de Dados, Quarta edição, Addison-Wesley,
 2005;
 
 Faroult, S.; Robson, P. The Art of SQL, O'Reilly Media, 2006;
- 
-Garcia-Molina, H.; Ullman, J. D.; Widom, J. Implementação de Sistemas de 
+
+Garcia-Molina, H.; Ullman, J. D.; Widom, J. Implementação de Sistemas de
 Banco de Dados, Primeira Edição, Campus, 2001;
 
 **Heuser, C. A. Projeto de Banco de Dados, Quinta Edição, Sagra, 2001;**
 
-Hoffer, J.; Prescott, M.; MacFadden, F. Modern Database Management, Oitava 
+Hoffer, J.; Prescott, M.; MacFadden, F. Modern Database Management, Oitava
 Edição, Prenticce-Hall, 2006;
 
-Korth, H. F.; Silberschatz, A.;Sudarshan, S. Sistema de Banco de Dados, 
+Korth, H. F.; Silberschatz, A.;Sudarshan, S. Sistema de Banco de Dados,
 Tradução da Quinta Edição, Campus, 2006;
 
 Ramakrishnan, R.; Gehrke, J. Sistemas de Gerenciamento de Banco de Dados, Terceira
@@ -191,5 +192,5 @@ Total menos duas provas = 26
 
 ## Agradecimento
 
-[Profa. Raqueline Ritter de Moura Penteado](http://ws2.din.uem.br/~raque/) 
+[Profa. Raqueline Ritter de Moura Penteado](http://ws2.din.uem.br/~raque/)
 por ceder boa parte do material e referências para esta disciplina.
