@@ -8,54 +8,54 @@ Duas fases:
 ### Modelagem idependente do SGDB
 
 1. Levantamento e análise de requisitos
- 
+
     Levantamento de requisitos é parte primeira no projeto do banco de dados
     que se for não for bem feito, pode levar facilmanente à ruína do sistema
-    de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
-    projeto do banco é constante enquanto é pertinente. Deve ser feito 
+    de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o
+    projeto do banco é constante enquanto é pertinente. Deve ser feito
     sempre que for necessário para o mesmo banco.
-    
-    A descrição deve ser concisa dos requisitos de dados para evitar 
+
+    A descrição deve ser concisa dos requisitos de dados para evitar
     interpretações erradas.
 
     1.1 Requisitos funcionais;
 
     !!! example "Exemplo 4.1"
         Uma relatório de notas do alunos deve ser mostrado ao usuário do
-        sistema junto com a disciplina e professor responsável pela 
+        sistema junto com a disciplina e professor responsável pela
         disciplina.
         ---
         Questões:
-        
+
         * Quais notas? Todas as notas? Notas de prova e trabalhos?
         * Mostrar apenas nome do aluno, ou mostrar também seu RA?
-    
+
 
     1.1 Requisitos de dados;
-    
+
     !!! example "Exemplo 4.2"
         Cada professor pode ter mais do que uma disciplina, e uma disciplina
         pode ter até 3 professor;
 
-        Papel do projetista perguntar e questionar esses tipso de requisitos 
+        Papel do projetista perguntar e questionar esses tipso de requisitos
         de dados.
 
 2. Análise funcional
 
     2.1 Especificação de transação de alto nível.
-    
+
     !!! example "Exemplo 4.3"
-        O usuário do banco de dados deve "selecionar" as entidades professor, 
-        aluno, disciplina e notas; relacionar essas entidades fazendo 
+        O usuário do banco de dados deve "selecionar" as entidades professor,
+        aluno, disciplina e notas; relacionar essas entidades fazendo
         "junções" delas para mostrar de forma tabular as notas dos alunos.
-        
+
 
 3. Projeto conceitual
 
     3.1 Modelo conceitutal: um diagrama (esquema) de entidade-relacionamento.
- 
+
 ### Modelagem dependente do SGDB
- 
+
 1. Projeto lógico: esquema lógico → projeto físico;
 
 2. Projeto do programa de aplicação → implementação das transações;
@@ -68,13 +68,13 @@ Tipos de atributos que ocorrem no modelo ER
 
 ### Monovalorados e Multivalorados
 
-**Monovalorados** assumem apenas um único valor para um entidade específica; 
+**Monovalorados** assumem apenas um único valor para um entidade específica;
 já multivalorados podem assumir conjunto de valores para uma entidade.
 
 Exemplos:
 
 * A entidade empréstimo pode ter um atributo **código monovalorado**;
-* A entidade empregado pode ter um atributo **nome-dependentes 
+* A entidade empregado pode ter um atributo **nome-dependentes
   multivalorado**: filhos (filho1, filho2, etc);
 * A entidade cliente pode ter um atributo **endereço também multivalorado**:
   endereço = logradouro, número, bairro e CEP;
@@ -87,19 +87,19 @@ número de ocorrências em um atributo multivalorado. Exemplos:
 
 ### Nulos
 
-Um valor nulo é usado quando uma entidade não possui valor para determinado 
+Um valor nulo é usado quando uma entidade não possui valor para determinado
 atributo.
 
 Exemplo:
 
 * Se o empregado não possui número da carteira de reservista, o valor nulo é
-  atribuído a este atributo para esta entidade significando que o atributo 
+  atribuído a este atributo para esta entidade significando que o atributo
   não é aplicável a ele;
-  
+
 * Valores desconhecidos podem ser representados por valores nulos significando,
   neste caso, a omissão da informação;
-  
-* Campos de cadastros **não obrigatórios** podem ser nulos: um campo 
+
+* Campos de cadastros **não obrigatórios** podem ser nulos: um campo
   **telefone fixo** por exemplo.
 
 ### Armazenados e Derivados
@@ -112,10 +112,10 @@ O valor de um atributo pode ser derivado de outro:
 * O número de empréstimos de um cliente (atributo qtde_empréstimos) pode ser
   calculado a partir de uma pesquisa na entidade empréstimos de um banco;
 
-* O valor do tempo de casa de um funcionário pode ser calculado a partir da 
+* O valor do tempo de casa de um funcionário pode ser calculado a partir da
   sua data de contratação.
-  
-Atributos derivados podem exigir "cálculo extra", diferente de pegar o 
+
+Atributos derivados podem exigir "cálculo extra", diferente de pegar o
 dado já pronto do banco de dados, como exemplificados acima.
 
 Exemplo:
@@ -129,7 +129,7 @@ quantidade_clientes = tamanho(clientes)
 
 ### Atributos Complexos
 
-Atributos compostos e multivalorados podem ser aninhados de uma maneira 
+Atributos compostos e multivalorados podem ser aninhados de uma maneira
 arbitrária.
 
 ```
@@ -152,7 +152,7 @@ Atributo qualitativo.
 ``` Enumerador tab=
 Renda = {Baixa, Média, Alta}
 
-Atributo quantitativo discretizado.
+Atributo qualitativo ordinal.
 Intervalo discreto (Alta > Média > Baixa)
 ```
 
@@ -164,7 +164,7 @@ Atributo com intervalo contínuo.
 
 ### Exemplo de entidades e atributos
 
-Mundo real: um banco (simplificado)
+Mundo real: uma instituição financeira (simplificada)
 
 * Entidades
     * (cliente, agência, conta, empréstimo)
@@ -173,26 +173,26 @@ Mundo real: um banco (simplificado)
     ```
     cliente_esquema = (
       nome_cliente: string,
-      seguro_social: string, 
+      seguro_social: string,
       rua_cliente: string,
       cidade_cliente: string)
     ```
-    
+
     ```
     conta_esquema = (numero_conta: integer, saldo: real)
     ```
-    
+
     ```
-    emprestime_esquema = (numero_emprestimo: integer, total: real) 
+    emprestime_esquema = (numero_emprestimo: integer, total: real)
     ```
-    
+
     ```
     agencia_esquema = (
       nome_agencia: string,
       cidade_agência: string,
       fundos: real)
     ```
-    
+
 ### Atributos-chave de um tipo Entidade
 
 * Uma restrição importante de um tipo entidade é a chave ou restrição de
@@ -210,15 +210,15 @@ Exempos:
 * Projeto
 
     * <u>Nome</u>, <u>Número</u>, Localização, DepartamentoControle;
-    
+
 * Empregado
 
-    * Nome(Pnome ,Mnome ,Unome), <u>SSN</u>, Sexo, Endereço, Salário, 
+    * Nome(Pnome ,Mnome ,Unome), <u>SSN</u>, Sexo, Endereço, Salário,
       DataNascimento, Departamento, Supervisor, {TrabalhaEm(Projeto, Horas)};
 
 * Dependente
 
-    * <u>Empregado</u>, <u>NomeDependente</u>, Sexo, DataNascimento, 
+    * <u>Empregado</u>, <u>NomeDependente</u>, Sexo, DataNascimento,
     Parentesco.
 
 
@@ -233,6 +233,9 @@ Exempos:
 * **Atributo multivalorado:** {atributo_multivalorado}
     * ex: {dependentes}
 
+## **Sugestão de implementação de BANCO SQL dessas tabelas para logo**
+
+
 ## Relacionamentos    
 
 * Um atributo de uma entidade refere-se a outra entidade;
@@ -242,14 +245,14 @@ Exempos:
 * Um relacionamento é uma associação entre uma ou
 várias entidades:
 
-    * Um relacionamento que associa o cliente H com o empréstimo L-15 
-      especifica que o cliente H é o cliente que realizou o referido 
+    * Um relacionamento que associa o cliente H com o empréstimo L-15
+      especifica que o cliente H é o cliente que realizou o referido
       empréstimo.
 
-* Tipo Relacionamento define um conjunto de associações ou um conjunto de 
+* Tipo Relacionamento define um conjunto de associações ou um conjunto de
   relacionamentos entre entidades;
 
-* A associação entre os conjuntos de entidades é referida como uma 
+* A associação entre os conjuntos de entidades é referida como uma
   participação: o conjunto de entidades **E1 , E2 , ..., Em** **participa** do
   conjunto de relacionamentos **R**;
 
@@ -259,8 +262,8 @@ várias entidades:
 
 * Exemplo:
     * Considere os conjuntos de entidades cliente e empréstimo;
-    * Definimos o conjunto de relacionamentos devedor para denotar a 
-      associação entre clientes e empréstimos bancários contraídos pelos 
+    * Definimos o conjunto de relacionamentos devedor para denotar a
+      associação entre clientes e empréstimos bancários contraídos pelos
       clientes.
 
 ![relacionamento1](images/relacionamento1.jpg)
