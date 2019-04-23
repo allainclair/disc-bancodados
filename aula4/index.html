@@ -347,13 +347,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#relacionamentos" title="Relacionamentos" class="md-nav__link">
-    Relacionamentos
-  </a>
-  
-</li>
-      
       
       
       
@@ -371,8 +364,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../aula5.md" title="Aula 5 (2019-04-16)" class="md-nav__link">
+    <a href="../aula5/" title="Aula 5 (2019-04-16)" class="md-nav__link">
       Aula 5 (2019-04-16)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula6/" title="Aula 6 (2019-04-23)" class="md-nav__link">
+      Aula 6 (2019-04-23)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula7/" title="Aula 7 (2019-04-25)" class="md-nav__link">
+      Aula 7 (2019-04-25)
     </a>
   </li>
 
@@ -522,13 +539,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#relacionamentos" title="Relacionamentos" class="md-nav__link">
-    Relacionamentos
-  </a>
-  
-</li>
-      
       
       
       
@@ -560,16 +570,16 @@
 <p>Levantamento e análise de requisitos</p>
 <p>Levantamento de requisitos é parte primeira no projeto do banco de dados
 que se for não for bem feito, pode levar facilmanente à ruína do sistema
-de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o 
-projeto do banco é constante enquanto é pertinente. Deve ser feito 
+de banco de dados. Isso deve ser feito de forma iterativa, ou seja, o
+projeto do banco é constante enquanto é pertinente. Deve ser feito
 sempre que for necessário para o mesmo banco.</p>
-<p>A descrição deve ser concisa dos requisitos de dados para evitar 
+<p>A descrição deve ser concisa dos requisitos de dados para evitar
 interpretações erradas.</p>
 <p>1.1 Requisitos funcionais;</p>
 <div class="admonition example">
 <p class="admonition-title">Exemplo 4.1</p>
 <p>Uma relatório de notas do alunos deve ser mostrado ao usuário do
-sistema junto com a disciplina e professor responsável pela 
+sistema junto com a disciplina e professor responsável pela
 disciplina.</p>
 <hr />
 <p>Questões:</p>
@@ -583,7 +593,7 @@ disciplina.</p>
 <p class="admonition-title">Exemplo 4.2</p>
 <p>Cada professor pode ter mais do que uma disciplina, e uma disciplina
 pode ter até 3 professor;</p>
-<p>Papel do projetista perguntar e questionar esses tipso de requisitos 
+<p>Papel do projetista perguntar e questionar esses tipso de requisitos
 de dados.</p>
 </div>
 </li>
@@ -592,8 +602,8 @@ de dados.</p>
 <p>2.1 Especificação de transação de alto nível.</p>
 <div class="admonition example">
 <p class="admonition-title">Exemplo 4.3</p>
-<p>O usuário do banco de dados deve "selecionar" as entidades professor, 
-aluno, disciplina e notas; relacionar essas entidades fazendo 
+<p>O usuário do banco de dados deve "selecionar" as entidades professor,
+aluno, disciplina e notas; relacionar essas entidades fazendo
 "junções" delas para mostrar de forma tabular as notas dos alunos.</p>
 </div>
 </li>
@@ -615,12 +625,12 @@ aluno, disciplina e notas; relacionar essas entidades fazendo
 <p>Tipos de atributos que ocorrem no modelo ER</p>
 <h3 id="simples-e-compostos">Simples e Compostos</h3>
 <h3 id="monovalorados-e-multivalorados">Monovalorados e Multivalorados</h3>
-<p><strong>Monovalorados</strong> assumem apenas um único valor para um entidade específica; 
+<p><strong>Monovalorados</strong> assumem apenas um único valor para um entidade específica;
 já multivalorados podem assumir conjunto de valores para uma entidade.</p>
 <p>Exemplos:</p>
 <ul>
 <li>A entidade empréstimo pode ter um atributo <strong>código monovalorado</strong>;</li>
-<li>A entidade empregado pode ter um atributo <strong>nome-dependentes 
+<li>A entidade empregado pode ter um atributo <strong>nome-dependentes
   multivalorado</strong>: filhos (filho1, filho2, etc);</li>
 <li>A entidade cliente pode ter um atributo <strong>endereço também multivalorado</strong>:
   endereço = logradouro, número, bairro e CEP;</li>
@@ -629,13 +639,13 @@ já multivalorados podem assumir conjunto de valores para uma entidade.</p>
 <p>O atributo multivalorado pode ter um limite superior ou/e inferior para o
 número de ocorrências em um atributo multivalorado. Exemplos:</p>
 <h3 id="nulos">Nulos</h3>
-<p>Um valor nulo é usado quando uma entidade não possui valor para determinado 
+<p>Um valor nulo é usado quando uma entidade não possui valor para determinado
 atributo.</p>
 <p>Exemplo:</p>
 <ul>
 <li>
 <p>Se o empregado não possui número da carteira de reservista, o valor nulo é
-  atribuído a este atributo para esta entidade significando que o atributo 
+  atribuído a este atributo para esta entidade significando que o atributo
   não é aplicável a ele;</p>
 </li>
 <li>
@@ -643,7 +653,7 @@ atributo.</p>
   neste caso, a omissão da informação;</p>
 </li>
 <li>
-<p>Campos de cadastros <strong>não obrigatórios</strong> podem ser nulos: um campo 
+<p>Campos de cadastros <strong>não obrigatórios</strong> podem ser nulos: um campo
   <strong>telefone fixo</strong> por exemplo.</p>
 </li>
 </ul>
@@ -659,11 +669,11 @@ atributo.</p>
   calculado a partir de uma pesquisa na entidade empréstimos de um banco;</p>
 </li>
 <li>
-<p>O valor do tempo de casa de um funcionário pode ser calculado a partir da 
+<p>O valor do tempo de casa de um funcionário pode ser calculado a partir da
   sua data de contratação.</p>
 </li>
 </ul>
-<p>Atributos derivados podem exigir "cálculo extra", diferente de pegar o 
+<p>Atributos derivados podem exigir "cálculo extra", diferente de pegar o
 dado já pronto do banco de dados, como exemplificados acima.</p>
 <p>Exemplo:</p>
 <div class="codehilite"><pre><span></span>quantidade_emprestimos = tamanho(emprestimos)
@@ -673,7 +683,7 @@ quantidade_clientes = tamanho(clientes)
 </pre></div>
 
 <h3 id="atributos-complexos">Atributos Complexos</h3>
-<p>Atributos compostos e multivalorados podem ser aninhados de uma maneira 
+<p>Atributos compostos e multivalorados podem ser aninhados de uma maneira
 arbitrária.</p>
 <div class="codehilite"><pre><span></span>Endereco(
   EnderecoRua(Numero, Logradouro),
@@ -693,7 +703,7 @@ Atributo qualitativo.
 <label for="__tab_1_1">Enumerador</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span>Renda = {Baixa, Média, Alta}
 
-Atributo quantitativo discretizado.
+Atributo qualitativo ordinal.
 Intervalo discreto (Alta &gt; Média &gt; Baixa)
 </pre></div></div>
 <input name="__tabs_1" type="radio" id="__tab_1_2" />
@@ -704,7 +714,7 @@ Atributo com intervalo contínuo.
 </pre></div></div>
 </div>
 <h3 id="exemplo-de-entidades-e-atributos">Exemplo de entidades e atributos</h3>
-<p>Mundo real: um banco (simplificado)</p>
+<p>Mundo real: uma instituição financeira (simplificada)</p>
 <ul>
 <li>
 <p>Entidades</p>
@@ -716,14 +726,14 @@ Atributo com intervalo contínuo.
 <p>Esquemas (tipos entidades)
     <div class="codehilite"><pre><span></span>cliente_esquema = (
   nome_cliente: string,
-  seguro_social: string, 
+  seguro_social: string,
   rua_cliente: string,
   cidade_cliente: string)
 </pre></div></p>
 <div class="codehilite"><pre><span></span>conta_esquema = (numero_conta: integer, saldo: real)
 </pre></div>
 
-<div class="codehilite"><pre><span></span>emprestime_esquema = (numero_emprestimo: integer, total: real) 
+<div class="codehilite"><pre><span></span>emprestime_esquema = (numero_emprestimo: integer, total: real)
 </pre></div>
 
 <div class="codehilite"><pre><span></span>agencia_esquema = (
@@ -759,14 +769,14 @@ Atributo com intervalo contínuo.
 <li>
 <p>Empregado</p>
 <ul>
-<li>Nome(Pnome ,Mnome ,Unome), <u>SSN</u>, Sexo, Endereço, Salário, 
+<li>Nome(Pnome ,Mnome ,Unome), <u>SSN</u>, Sexo, Endereço, Salário,
   DataNascimento, Departamento, Supervisor, {TrabalhaEm(Projeto, Horas)};</li>
 </ul>
 </li>
 <li>
 <p>Dependente</p>
 <ul>
-<li><u>Empregado</u>, <u>NomeDependente</u>, Sexo, DataNascimento, 
+<li><u>Empregado</u>, <u>NomeDependente</u>, Sexo, DataNascimento,
 Parentesco.</li>
 </ul>
 </li>
@@ -792,48 +802,6 @@ Parentesco.</li>
 </ul>
 </li>
 </ul>
-<h2 id="relacionamentos">Relacionamentos</h2>
-<ul>
-<li>
-<p>Um atributo de uma entidade refere-se a outra entidade;</p>
-</li>
-<li>
-<p>Refinamento: atributos são convertidos em relacionamentos entre as entidades;</p>
-</li>
-<li>
-<p>Um relacionamento é uma associação entre uma ou
-várias entidades:</p>
-<ul>
-<li>Um relacionamento que associa o cliente H com o empréstimo L-15 
-  especifica que o cliente H é o cliente que realizou o referido 
-  empréstimo.</li>
-</ul>
-</li>
-<li>
-<p>Tipo Relacionamento define um conjunto de associações ou um conjunto de 
-  relacionamentos entre entidades;</p>
-</li>
-<li>
-<p>A associação entre os conjuntos de entidades é referida como uma 
-  participação: o conjunto de entidades <strong>E1 , E2 , ..., Em</strong> <strong>participa</strong> do
-  conjunto de relacionamentos <strong>R</strong>;</p>
-</li>
-<li>
-<p>Grau do relacionamento: o relacionamento binário (envolve dois
-  conjuntos entidades) é um relacionamento de grau 2. E assim
-  por diante;</p>
-</li>
-<li>
-<p>Exemplo:</p>
-<ul>
-<li>Considere os conjuntos de entidades cliente e empréstimo;</li>
-<li>Definimos o conjunto de relacionamentos devedor para denotar a 
-  associação entre clientes e empréstimos bancários contraídos pelos 
-  clientes.</li>
-</ul>
-</li>
-</ul>
-<p><img alt="relacionamento1" src="../images/relacionamento1.jpg" /></p>
                 
                   
                 
@@ -869,13 +837,13 @@ várias entidades:</p>
           </a>
         
         
-          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../aula5/" title="Aula 5 (2019-04-16)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Exercícios 1
+                Aula 5 (2019-04-16)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
