@@ -2,7 +2,7 @@
 
 ## **Avisos**
 
-Alunos com plano de aula enviar um email para mim informando o conflito de 
+Alunos com plano de aula enviar um email para mim informando o conflito de
 disciplinas.
 
 ## Professor
@@ -22,8 +22,8 @@ disciplinas.
 
 ## Avaliação (projeto)
 
-* prova 1 [0-10]
-* prova 2 [0-10]
+* prova 1 [0-10] - Projeto de banco de dados
+* prova 2 [0-10] - "Uso" do banco de dados
 * trabalho 1 [0-10]
 * **Nota final (NF):** (prova 1 + prova 2 + trabalho 1) / 3
 * Nota Exame (NE)
