@@ -464,12 +464,12 @@
 <p>Uma relação entre 3 entidades</p>
 <p><img alt="er-ternario" src="../images/er-ternario.png" /></p>
 <p>No caso de um relacionamento ternário, a cardinalidade refere-se a <strong>pares de
-entidades</strong>. Em um relacionamento R entre três entidades A, B e C, a 
+entidades</strong>. Em um relacionamento R entre três entidades A, B e C, a
 cardinalidade máxima de A e B dentro de R indica quantas ocorrências de C
 podem estar associadas a um par de ocorrências de A e B.</p>
 <p><img alt="er-ternario-card" src="../images/er-ternario-card.png" /></p>
 <p>O "1" na linha que liga o retângulo representativo da entidade Distribuidor
-ao losango representativo do relacionamento expressa que cada par de 
+ao losango representativo do relacionamento expressa que cada par de
 ocorrências (cidade, produto) está associado a no máximo um distribuidor.
 Em outros termos, não há concorrência pela distribuição de um produto em uma
 cidade.</p>
@@ -491,35 +491,35 @@ cidade.</p>
 entidades através do conceito de generalização/especialização. Através deste
 conceito é possível atribuir propriedades particulares a um subconjunto das
 ocorrências (especializadas) de uma entidade genérica.</p>
-<p>Nos relacionamentos de generalização e especialização as entidades de 
+<p>Nos relacionamentos de generalização e especialização as entidades de
 nível inferior herdam os atributos e os relacionamentos das entidades de
 nível superior.</p>
 <p><img alt="gen-espec-er" src="../images/gen-espec-er.png" /></p>
 <h3 id="restricoes-generalizacaoespecializacao">Restrições Generalização/Especialização</h3>
 <ul>
 <li>
-<p><strong>Total:</strong> CADA ocorrência da entidade genérica existe sempre uma 
+<p><strong>Total:</strong> CADA ocorrência da entidade genérica existe sempre uma
   ocorrência em uma das entidades especializadas.</p>
 <ul>
 <li>Pode ser simbolizado por um "t".</li>
 </ul>
 </li>
 <li>
-<p><strong>Parcial:</strong> NEM toda ocorrência da entidade genérica possui uma ocorrência 
+<p><strong>Parcial:</strong> NEM toda ocorrência da entidade genérica possui uma ocorrência
   correspondente em uma entidade especializada.</p>
 <ul>
 <li>Pode ser simbolizado por um "p".</li>
 </ul>
 </li>
 <li>
-<p><strong>Exclusiva</strong>: uma ocorrência de entidade genérica é especializada <strong>no 
+<p><strong>Exclusiva</strong>: uma ocorrência de entidade genérica é especializada <strong>no
   máximo uma vez</strong>, nas folhas da árvore de generalização/especialização.</p>
 <ul>
 <li>Pode ser simbolizado por um "x".</li>
 </ul>
 </li>
 <li>
-<p><strong>Compartilhada:</strong> uma ocorrência de entidade genérica pode aparecer em 
+<p><strong>Compartilhada:</strong> uma ocorrência de entidade genérica pode aparecer em
   várias entidades nas folhas da árvore de generalização/especialização.</p>
 <ul>
 <li>Pode ser simbolizado por um "c".</li>
@@ -529,7 +529,7 @@ nível superior.</p>
 <h2 id="entidade-associativa">Entidade Associativa</h2>
 <ul>
 <li>
-<p>Limitação do modelo E-R: não é possível expressar relacionamento entre 
+<p>Limitação do modelo E-R: não é possível expressar relacionamento entre
   relacionamentos;</p>
 </li>
 <li>
@@ -628,7 +628,7 @@ Fornecedor(id, nome)
 <li>
 <p>período ? (derivado de data, inteiro)</p>
 <ul>
-<li>Ex: </li>
+<li>Ex:</li>
 </ul>
 </li>
 <li>
@@ -681,7 +681,7 @@ Fornecedor(id, nome)
 <li>
 <p>endereço (composto)</p>
 <ul>
-<li>Ex: (CEP, string) (cidade, string) (logradouro, string) (numero, 
+<li>Ex: (CEP, string) (cidade, string) (logradouro, string) (numero,
   inteiro).</li>
 </ul>
 </li>
@@ -699,7 +699,7 @@ Fornecedor(id, nome)
 <li>
 <p>endereço (composto)</p>
 <ul>
-<li>Ex: (CEP, string) (cidade, string) (logradouro, string) (numero, 
+<li>Ex: (CEP, string) (cidade, string) (logradouro, string) (numero,
   inteiro).</li>
 </ul>
 </li>
@@ -747,7 +747,7 @@ Fornecedor(id, nome)
 <li>
 <p>itens (multivalorado, "bebida")</p>
 <ul>
-<li>Ex: bebida 1, bebida 2 e bebida 3 vendidas.</li>
+<li>Ex: bebida 1, bebida 2 e bebida 3 compradas.</li>
 </ul>
 </li>
 </ul>
