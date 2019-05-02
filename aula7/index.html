@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -62,9 +62,6 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
-    
-    
-      
     
     
   </head>
@@ -102,19 +99,22 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <span class="md-header-nav__topic">
-              Banco de dados
-            </span>
-            <span class="md-header-nav__topic">
-              Aula 7 (2019-04-25)
-            </span>
+            
+              <span class="md-header-nav__topic">
+                Banco de dados
+              </span>
+              <span class="md-header-nav__topic">
+                Aula 7 (2019-04-25)
+              </span>
+            
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -137,6 +137,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -372,6 +373,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../aula8/" title="Aula 8 (2019-05-02)" class="md-nav__link">
+      Aula 8 (2019-05-02)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
       Exercícios 1
     </a>
@@ -503,9 +516,9 @@
                   <h1>Aula 7 (2019-04-25)</h1>
                 
                 <h2 id="aspecto-temporal">Aspecto temporal</h2>
-<p>Uma pessoa (empregado) só pode locar uma mesa por vez, e uma mesa só pode ser 
-locada por uma pessoa. Logo é uma relação de 1 para 1. Só que existe um aspecto 
-temporal, pois pessoas podem locar mesas em tempos diferentes, assim como 
+<p>Uma pessoa (empregado) só pode locar uma mesa por vez, e uma mesa só pode ser
+locada por uma pessoa. Logo é uma relação de 1 para 1. Só que existe um aspecto
+temporal, pois pessoas podem locar mesas em tempos diferentes, assim como
 mesas são locadas em tempos diferentes para pessoas diferentes.</p>
 <p>Como adicionar esse aspecto temporal?</p>
 <p><img alt="empregado-mesa" src="../images/empregado-mesa.png" /></p>
@@ -518,7 +531,7 @@ mesas são locadas em tempos diferentes para pessoas diferentes.</p>
 <h3 id="introducao">Introdução</h3>
 <ul>
 <li>
-<p>Um banco de dados relacional é composto de <strong>tabelas ou relações</strong>. A 
+<p>Um banco de dados relacional é composto de <strong>tabelas ou relações</strong>. A
   terminolo gia tabela é mais comum nos produtos comerciais e na prática. Já
   a terminologia relação foi utilizada na literatura original sobre a abordagem
   relacional (daía denominação “relacional”);</p>
@@ -528,8 +541,8 @@ mesas são locadas em tempos diferentes para pessoas diferentes.</p>
   aplicações comerciais;</p>
 </li>
 <li>
-<p>Modelo usa o conceito de uma <strong>relação matemática</strong> como seu bloco de 
-  construção básica e tem sua base teórica na teoria dos conjuntos e na 
+<p>Modelo usa o conceito de uma <strong>relação matemática</strong> como seu bloco de
+  construção básica e tem sua base teórica na teoria dos conjuntos e na
   lógica de predicado de primeira ordem.</p>
 </li>
 <li>
@@ -539,7 +552,7 @@ mesas são locadas em tempos diferentes para pessoas diferentes.</p>
 <li>
 <p>Tabela (relações)</p>
 <ul>
-<li>Uma tabela é formada por um conjunto de colunas denominadas de 
+<li>Uma tabela é formada por um conjunto de colunas denominadas de
   atributos e por um conjunto de linhas denominadas de tuplas.</li>
 </ul>
 </li>
@@ -549,7 +562,7 @@ mesas são locadas em tempos diferentes para pessoas diferentes.</p>
 <li>
 <p>Linhas (tuplas)</p>
 <ul>
-<li>Cada tabela possui um conjunto de linhas que representa um 
+<li>Cada tabela possui um conjunto de linhas que representa um
   relacionamento entre um conjunto de valores, um fato.</li>
 </ul>
 </li>
@@ -562,7 +575,7 @@ mesas são locadas em tempos diferentes para pessoas diferentes.</p>
 <li>
 <p>Domínios</p>
 <ul>
-<li>Para cada atributo existe um conjunto de valores permitidos, chamado de 
+<li>Para cada atributo existe um conjunto de valores permitidos, chamado de
   domínio: inteiro, string, data, etc.</li>
 </ul>
 </li>
@@ -578,8 +591,8 @@ ao menos três tipos de chaves a considerar:</p>
 <li>Chave alternativa.</li>
 </ul>
 <h3 id="chave-primaria">Chave primária</h3>
-<p>Uma chave primária é uma coluna ou uma combinação de colunas cujos valo-
-res distinguem uma linha das demais dentro de uma tabela.</p>
+<p>Uma chave primária é uma coluna ou uma combinação de colunas cujos valores
+distinguem uma linha das demais dentro de uma tabela.</p>
 <p><strong>Empregado:</strong></p>
 <table>
 <thead>
@@ -681,11 +694,12 @@ res distinguem uma linha das demais dentro de uma tabela.</p>
 </li>
 <li>
 <p>É necessário considerar ambos valores (<strong><u>CodigoEmp</u></strong>  e
-  <strong><u>NoDepen</u></strong>) para identificar uma linha na tabela, ou seja para 
+  <strong><u>NoDepen</u></strong>) para identificar uma linha na tabela, ou seja para
   identificar um dependente.</p>
 </li>
 </ul>
 <h3 id="chave-estrangeira">Chave estrangeira</h3>
+<p>CONTINUAR DAQUI</p>
 <p>Uma chave estrangeira é uma coluna ou uma combinação de colunas, cujos
 valores aparecem necessariamente na chave primária de uma tabela. A chave
 estrangeira é o mecanismo que permite a <strong>implementação de relacionamentos</strong>
@@ -750,28 +764,29 @@ em um banco de dados relacional.</p>
 </tr>
 </tbody>
 </table>
-<p>A coluna <strong>CodigoDepto</strong> da tabela Empregado é uma chave estrangeira <strong>em 
+<p>A coluna <strong>CodigoDepto</strong> da tabela Empregado é uma chave estrangeira <strong>em
 relação a chave primária</strong> da tabela Departamento.</p>
 <ul>
 <li>
 <p><em>Quando da inclusão de uma linha na tabela que contém a chave estrangeira</em>:
   neste caso, deve ser garantido que o valor da chave estrangeira apareça na
-  coluna da chave primária referenciada. No exemplo, isso significa que um 
+  coluna da chave primária referenciada. No exemplo, isso significa que um
   novo empregado deve atuar em um departamento já existente no banco de dados;</p>
 </li>
 <li>
-<p><em>Quando da alteração do valor da chave estrangeira</em>: deve ser garantido que 
-  o novo valor de uma chave estrangeira apareça na coluna da chave primária 
+<p><em>Quando da alteração do valor da chave estrangeira</em>: deve ser garantido que
+  o novo valor de uma chave estrangeira apareça na coluna da chave primária
   referenciada;</p>
 </li>
 <li>
-<p><em>Quando da exclusão de uma linha da tabela que contém a chave primária 
+<p><em>Quando da exclusão de uma linha da tabela que contém a chave primária
   referenciada pela chave estrangeira</em>: deve ser garantido que na coluna chave
   estrangeira não apareça o valor da chave primária que está sendo excluída.
   Exemplo: isso significa que um departamento não pode ser excluído, caso nele
   ainda existirem empregados.</p>
 </li>
 </ul>
+<p>PARAMOS DAQUI</p>
 <p>A palavra “estrangeira” usada para denominar este tipo de chave pode ser
 enganosa. Ela pode levar a crer que a chave estrangeira sempre referencia uma
 chave primária de outra tabela. Entretanto, esta restrição não existe. Uma
@@ -895,13 +910,13 @@ estrangeiras</strong> que referenciam a tabela em questão.</p>
           </a>
         
         
-          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../aula8/" title="Aula 8 (2019-05-02)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Exercícios 1
+                Aula 8 (2019-05-02)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -923,13 +938,15 @@ estrangeiras</strong> que referenciam a tabela em questão.</p>
           Material for MkDocs</a>
       </div>
       
+        
+      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
       
         
         
@@ -951,6 +968,9 @@ estrangeiras</strong> que referenciam a tabela em questão.</p>
         
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
       
     
   </body>
