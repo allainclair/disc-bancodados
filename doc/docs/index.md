@@ -25,7 +25,8 @@ disciplinas.
 * prova 1 [0-10] - Projeto de banco de dados
 * prova 2 [0-10] - "Uso" do banco de dados
 * trabalho 1 [0-10]
-* **Nota final (NF):** (prova 1 + prova 2 + trabalho 1) / 3
+* trabalho 2 [0-10]
+* **Nota final (NF):** (prova 1 + trabalho 1 + prova 2 + trabalho 2) / 4
 * Nota Exame (NE)
 * **Média final (MF) = ** (NF + NE) / 2
 

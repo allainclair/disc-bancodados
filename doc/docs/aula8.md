@@ -141,8 +141,6 @@ Princípios:
 
 ### Mapeamento
 
-Mapeamento dos Tipos Entidades Regulares
-
 * Mapeamento dos Tipos Entidades Regulares (Fortes);
 * Mapeamento dos Tipos Entidades Fracas;
 * Mapeamento de Atributos Atômicos, Multivalorados e Compostos;
@@ -273,7 +271,7 @@ entidades envolvidas em R.
 Esquema Relacional correspondente:
 Conferencia(<u>CodConf</u>, Nome, DataInstComOrg, EnderComOrg)‏
 
-## Relacionamento Binários 1:1
+## Relacionamento Binário 1:1
 
 Possibilidades:
 
