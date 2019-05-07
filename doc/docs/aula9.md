@@ -30,6 +30,25 @@ Esquema Relacional correspondente:
 
 ## Especialização ou Generalização
 
+Considerando uma tabela por **hierarquia**, a tabela é composta por:
+
+* Chave primária correspondente ao id da entidade mais genérica;
+* Uma coluna Tipo para identificar a entidade especializada;
+* Uma coluna para cada atributo da entidade genérica;
+* Colunas referentes aos relacionamentos dos quais participa a entidade genérica,
+  se necessário;
+* Uma coluna para cada atributo de cada entidade especializada;
+* Colunas referentes aos relacionamentos dos quais participa cada entidade
+  especializada, se necessário.
+
+Considerando uma tabela por entidade especializada temos:
+
+* Criar uma tabela para cada entidade que compõe a hierarquia, aplicando as
+  regras de implementação de entidades e relacionamentos apresentadas anteriormente;
+* Uma coluna Tipo na tabela da superclasse;
+* Acrescentar a chave primária da entidade genérica em cada nova tabela
+  considerando também a chave primária desta.
+ 
 ![gen-espec-mr](../images/mr/gen-espec-mr.png)
 
 MR correspondente:
@@ -40,21 +59,3 @@ MR correspondente:
 
 ![mr-gen-espec2](../images/mr/mr-gen-espec2.png)
 
-
-* Relações múltiplas – superclasse e subclasse
-
-    * Qualquer tipo de especialização (total, parcial, exclusiva e compartilhada)‏.
-
-* Relações múltiplas – somente relações de subclasses
-
-    * Especialização total.
-
-* Relação única com um atributo tipo
-
-    * Especialização exclusiva.
-
-* Relação única com o tipo atributos múltiplo
-
-    * Atributo do tipo booleano indicando a qual classe a tupla pertence;
-
-    * Especialização compartilhada.
