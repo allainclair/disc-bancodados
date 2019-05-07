@@ -3,11 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="eff25776-ec2f-4a92-b0f7-1ad21fd0dbc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/docs/aula8.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/docs/aula8.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/application.dc02f8ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.du.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.du.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.jp.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.jp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/lunr.th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/lunr/wordcut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/modernizr.01ccdecf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/stylesheets/application-palette.224b79ff.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/stylesheets/application.3020aac5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula5/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/aula6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula6/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/aula7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula7/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/exercicios1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/exercicios1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/search/search_index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" afterDir="false" />
@@ -20,12 +38,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/docs/aula8.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1695">
-                <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+              <first_editor relative-caret-position="1635">
+                <caret line="435" selection-start-line="435" selection-end-line="435" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/docs/aula9.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="900">
+                <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/mkdocs.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/docs/trabalho1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,8 +128,10 @@
         <option value="$PROJECT_DIR$/doc/docs/aula6.md" />
         <option value="$PROJECT_DIR$/doc/docs/exercicios1.md" />
         <option value="$PROJECT_DIR$/doc/docs/aula7.md" />
-        <option value="$PROJECT_DIR$/doc/mkdocs.yml" />
         <option value="$PROJECT_DIR$/doc/docs/aula8.md" />
+        <option value="$PROJECT_DIR$/doc/docs/aula9.md" />
+        <option value="$PROJECT_DIR$/doc/mkdocs.yml" />
+        <option value="$PROJECT_DIR$/doc/docs/trabalho1.md" />
       </list>
     </option>
   </component>
@@ -91,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,11 +155,6 @@
             <path>
               <item name="disc-bancodados" type="b2602c69:ProjectViewProjectNode" />
               <item name="disc-bancodados" type="462c0819:PsiDirectoryNode" />
-              <item name="aluno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disc-bancodados" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disc-bancodados" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -113,30 +162,15 @@
               <item name="disc-bancodados" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disc-bancodados" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disc-bancodados" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disc-bancodados" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disc-bancodados" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -178,7 +212,7 @@
     <frame x="0" y="0" width="1080" height="1920" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23255815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23200758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -294,16 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/docs/exercicios1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1590">
-            <caret line="310" column="55" selection-start-line="310" selection-start-column="55" selection-end-line="310" selection-end-column="55" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/docs/aula3.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -324,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/docs/aula7.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -344,8 +361,45 @@
     <entry file="file://$PROJECT_DIR$/doc/docs/aula8.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1695">
-            <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+          <first_editor relative-caret-position="1635">
+            <caret line="435" selection-start-line="435" selection-end-line="435" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docs/aula9.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="900">
+            <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/mkdocs.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docs/exercicios1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1590">
+            <caret line="310" column="55" selection-start-line="310" selection-start-column="55" selection-end-line="310" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/docs/trabalho1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
           </first_editor>
           <second_editor />
         </state>

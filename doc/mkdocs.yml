@@ -17,8 +17,10 @@ nav:
 - Aula 6 (2019-04-23): aula6.md
 - Aula 7 (2019-04-25): aula7.md
 - Aula 8 (2019-05-02): aula8.md
+- Aula 9 (2019-05-07): aula9.md
 - Exercícios 1: exercicios1.md
 - Resolvidos 1: resolvidos1.md
+- Trabalho 1: trabalho1.md
 
 plugins:
   - search
