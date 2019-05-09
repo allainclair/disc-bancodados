@@ -41,14 +41,14 @@ Considerando uma tabela por **hierarquia**, a tabela é composta por:
 * Colunas referentes aos relacionamentos dos quais participa cada entidade
   especializada, se necessário.
 
-Considerando uma tabela por entidade especializada temos:
+Considerando uma tabela por **entidade especializada** temos:
 
 * Criar uma tabela para cada entidade que compõe a hierarquia, aplicando as
   regras de implementação de entidades e relacionamentos apresentadas anteriormente;
 * Uma coluna Tipo na tabela da superclasse;
 * Acrescentar a chave primária da entidade genérica em cada nova tabela
   considerando também a chave primária desta.
- 
+
 ![gen-espec-mr](../images/mr/gen-espec-mr.png)
 
 MR correspondente:
@@ -58,4 +58,3 @@ MR correspondente:
 MR correspondente:
 
 ![mr-gen-espec2](../images/mr/mr-gen-espec2.png)
-
