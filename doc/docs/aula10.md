@@ -5,7 +5,7 @@
 * MR → ER: engenharia reversa.
 
 A engenharia reversa de modelos relacionais pode ser útil quando **não se tem um
-modelo conceitua** para um banco de dados existente. Isso pode acontecer quando o
+modelo conceitual** para um banco de dados existente. Isso pode acontecer quando o
 banco de dados **foi desenvolvida de forma empírica**, sem o uso de uma metodologia
 de desenvolvimento, ou quando o **esquema do banco de dados sofreu modificações ao
 longo do tempo**, sem que as mesmas tenham sido registradas no modelo conceitual.
