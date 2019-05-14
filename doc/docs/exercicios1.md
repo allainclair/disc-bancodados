@@ -315,3 +315,15 @@ c) horários de chegada ou de saída em determinados vôos;
 d) disponibilidade de vagas em um trecho de vôo;
 
 e) disponibilidade de determinados assentos em um trecho de vôo.
+
+## 1.8 Exercício ER -> MR
+
+
+![ex-er-to-mr](../images/mr/ex-er-to-mr.png)
+
+![ex-er-to-mt-attr](../images/mr/ex-er-to-mt-attr.png)
+
+## 1.9 Transformar o diagrama de ER abaixo para o MR.
+
+![er-exerc-5-1.svg](../images/er-exerc-5-1.svg)
+[er-exerc-5-1.svg](../images/er-exerc-5-1.svg)

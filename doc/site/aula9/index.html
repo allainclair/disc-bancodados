@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina de banco de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/aula1/">
+        <link rel="canonical" href="https://github.com/allainclair/aula9/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Aula 1 (2019-04-02) - Banco de dados</title>
+        <title>Aula 9 (2019-05-07) - Banco de dados</title>
       
     
     
@@ -81,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#banco-de-dados" tabindex="1" class="md-skip">
+      <a href="#exemplo" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -106,7 +106,7 @@
               Banco de dados
             </span>
             <span class="md-header-nav__topic">
-              Aula 1 (2019-04-02)
+              Aula 9 (2019-05-07)
             </span>
           
         </div>
@@ -184,45 +184,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Aula 1 (2019-04-02)
-      </label>
-    
-    <a href="./" title="Aula 1 (2019-04-02)" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../aula1/" title="Aula 1 (2019-04-02)" class="md-nav__link">
       Aula 1 (2019-04-02)
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#banco-de-dados" title="Banco de dados" class="md-nav__link">
-    Banco de dados
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -314,11 +280,59 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../aula9/" title="Aula 9 (2019-05-07)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 9 (2019-05-07)
+      </label>
+    
+    <a href="./" title="Aula 9 (2019-05-07)" class="md-nav__link md-nav__link--active">
       Aula 9 (2019-05-07)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-relacionamento-n-ario" title="Tipos Relacionamento N-ário" class="md-nav__link">
+    Tipos Relacionamento N-ário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especializacao-ou-generalizacao" title="Especialização ou Generalização" class="md-nav__link">
+    Especialização ou Generalização
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -389,8 +403,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#banco-de-dados" title="Banco de dados" class="md-nav__link">
-    Banco de dados
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-relacionamento-n-ario" title="Tipos Relacionamento N-ário" class="md-nav__link">
+    Tipos Relacionamento N-ário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especializacao-ou-generalizacao" title="Especialização ou Generalização" class="md-nav__link">
+    Especialização ou Generalização
   </a>
   
 </li>
@@ -412,22 +440,63 @@
               
                 
                 
-                  <h1>Aula 1 (2019-04-02)</h1>
+                  <h1>Aula 9 (2019-05-07)</h1>
                 
-                <h2 id="banco-de-dados">Banco de dados</h2>
+                <h2 id="exemplo">Exemplo</h2>
+<p><img alt="er-to-mr" src="../images/mr/er-to-mr.png" />
+<a href="../images/mr/er-to-mr.png">er-to-mr</a></p>
+<p><img alt="mr-from-er" src="../images/mr/mr-from-er.png" />
+<a href="../images/mr/mr-from-er.png">mr-from-er</a></p>
+<h2 id="tipos-relacionamento-n-ario">Tipos Relacionamento N-ário</h2>
 <ul>
 <li>
-<p>Um <a href="https://en.wikipedia.org/wiki/Database">banco de dados</a> é uma coleção 
-organizada de dados a qual geralmente é armazenada e acessada 
-eletronicamente por meio de um sistema computacional;</p>
+<p>O relacionamento R é transformado em uma entidade E;</p>
 </li>
 <li>
-<p>O <a href="https://en.wikipedia.org/wiki/Database#Database_management_system">sistema gerenciador de banco de dados (SGBD)</a> é um
-<em>software</em> que interage com usuários finais, aplicações e o próprio banco de
-dados. O SGBD captura e analiza os dados.</p>
+<p>A entidade E é ligada a cada uma das entidades que participavam do relacionamento
+  original por meio de relacionamentos binários;</p>
+</li>
+<li>
+<p>Considerar as regras de implementação de entidades e relacionamentos binários
+  apresentadas anteriormente.</p>
 </li>
 </ul>
-<p><img alt="Banco de dados" src="../images/database.svg" /></p>
+<p><img alt="nario-to-binario" src="../images/mr/nario-to-binario.png" /></p>
+<p>Esquema Relacional correspondente:</p>
+<ul>
+<li>Produto(<u>CodProd</u>, Nome)‏;</li>
+<li>Cidade(<u>CodCid</u>, Nome)‏;</li>
+<li>Distribuidor(<u>CodDistr</u>, Nome)‏;</li>
+<li>Distribuição(<u>CodProd</u>, CodDistr, <u>CodCid</u>, DatedeInicio)‏;</li>
+<li>CodProd referencia Produto;</li>
+<li>CodDistr referencia Distribuidor;</li>
+<li>CodCid  referencia Cidade.</li>
+</ul>
+<h2 id="especializacao-ou-generalizacao">Especialização ou Generalização</h2>
+<p>Considerando uma tabela por <strong>hierarquia</strong>, a tabela é composta por:</p>
+<ul>
+<li>Chave primária correspondente ao id da entidade mais genérica;</li>
+<li>Uma coluna Tipo para identificar a entidade especializada;</li>
+<li>Uma coluna para cada atributo da entidade genérica;</li>
+<li>Colunas referentes aos relacionamentos dos quais participa a entidade genérica,
+  se necessário;</li>
+<li>Uma coluna para cada atributo de cada entidade especializada;</li>
+<li>Colunas referentes aos relacionamentos dos quais participa cada entidade
+  especializada, se necessário.</li>
+</ul>
+<p>Considerando uma tabela por <strong>entidade especializada</strong> temos:</p>
+<ul>
+<li>Criar uma tabela para cada entidade que compõe a hierarquia, aplicando as
+  regras de implementação de entidades e relacionamentos apresentadas anteriormente;</li>
+<li>Uma coluna Tipo na tabela da superclasse;</li>
+<li>Acrescentar a chave primária da entidade genérica em cada nova tabela
+  considerando também a chave primária desta.</li>
+</ul>
+<p><img alt="gen-espec-mr" src="../images/mr/gen-espec-mr.png" /></p>
+<p>MR correspondente:</p>
+<p><img alt="mr-gen-espec" src="../images/mr/mr-gen-espec.png" /></p>
+<p>MR correspondente:</p>
+<p><img alt="mr-gen-espec2" src="../images/mr/mr-gen-espec2.png" /></p>
                 
                   
                 
@@ -448,7 +517,7 @@ dados. O SGBD captura e analiza os dados.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Introdução" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../aula8/" title="Aula 8 (2019-05-02)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -457,19 +526,19 @@ dados. O SGBD captura e analiza os dados.</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Introdução
+                Aula 8 (2019-05-02)
               </span>
             </div>
           </a>
         
         
-          <a href="../aula2/" title="Aula 2 (2019-04-04)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../aula10/" title="Aula 10 (2019-05-09)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Aula 2 (2019-04-04)
+                Aula 10 (2019-05-09)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
