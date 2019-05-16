@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina de banco de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/aula10/">
+        <link rel="canonical" href="https://github.com/allainclair/aula11/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Aula 10 (2019-05-09) - Banco de dados</title>
+        <title>Aula 11 (2019-05-14) - Banco de dados</title>
       
     
     
@@ -81,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#engenharia-reversa" tabindex="1" class="md-skip">
+      <a href="#identificacao-da-construcao-er-correspondente-a-cada-tabela" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -106,7 +106,7 @@
               Banco de dados
             </span>
             <span class="md-header-nav__topic">
-              Aula 10 (2019-05-09)
+              Aula 11 (2019-05-14)
             </span>
           
         </div>
@@ -292,6 +292,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../aula10/" title="Aula 10 (2019-05-09)" class="md-nav__link">
+      Aula 10 (2019-05-09)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -299,22 +311,18 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Aula 10 (2019-05-09)
+        Aula 11 (2019-05-14)
       </label>
     
-    <a href="./" title="Aula 10 (2019-05-09)" class="md-nav__link md-nav__link--active">
-      Aula 10 (2019-05-09)
+    <a href="./" title="Aula 11 (2019-05-14)" class="md-nav__link md-nav__link--active">
+      Aula 11 (2019-05-14)
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">Índice</label>
@@ -412,18 +420,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../aula11/" title="Aula 11 (2019-05-14)" class="md-nav__link">
-      Aula 11 (2019-05-14)
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
       Exercícios 1
     </a>
@@ -467,8 +463,6 @@
                     
 <nav class="md-nav md-nav--secondary">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">Índice</label>
@@ -566,28 +560,9 @@
               
                 
                 
-                <h2 id="engenharia-reversa">Engenharia reversa</h2>
-<ul>
-<li>
-<p>ER → MR: visto em aulas passadas;</p>
-</li>
-<li>
-<p>MR → ER: engenharia reversa.</p>
-</li>
-</ul>
-<p>A engenharia reversa de modelos relacionais pode ser útil quando <strong>não se tem um
-modelo conceitual</strong> para um banco de dados existente. Isso pode acontecer quando o
-banco de dados <strong>foi desenvolvida de forma empírica</strong>, sem o uso de uma metodologia
-de desenvolvimento, ou quando o <strong>esquema do banco de dados sofreu modificações ao
-longo do tempo</strong>, sem que as mesmas tenham sido registradas no modelo conceitual.</p>
-<ol>
-<li>Identificação da construção ER correspondente a cada tabela;</li>
-<li>Definição de relacionamentos 1:n e 1:1;</li>
-<li>Definição de atributos;</li>
-<li>Definição de identificadores de entidades e relacionamentos.</li>
-</ol>
-<p><img alt="mr-eng-rev" src="../images/mr/mr-eng-rev.png" /></p>
-<h3 id="identificacao-da-construcao-er-correspondente-a-cada-tabela">Identificação da construção ER correspondente a cada tabela</h3>
+                  <h1>Aula 11 (2019-05-14)</h1>
+                
+                <h3 id="identificacao-da-construcao-er-correspondente-a-cada-tabela">Identificação da construção ER correspondente a cada tabela</h3>
 <p>Uma tabela pode corresponder a:</p>
 <ul>
 <li>Uma entidade;</li>
@@ -603,14 +578,13 @@ em relação às tabelas Curso e Disciplina respectivamente. Portanto, a tabela 
 representa um relacionamento entre as entidades correspondentes às tabelas CodCr e
 CodDisc. No exemplo, a única tabela deste tipo é a tabela Curric.</p>
 <h4 id="regra-2-toda-chave-primaria-e-uma-chave-estrangeira">Regra 2: Toda chave primária é uma chave estrangeira</h4>
-<p>Regra 2: Toda chave primária é uma chave estrangeira A tabela cuja chave primária
-é toda ela uma chave estrangeira representa uma entidade que forma uma especialização
-da entidade correspondente à tabela referenciada pela chave estrangeira. Um exemplo
-de tabela deste tipo é a tabela Laboratório que possui como chave primária as colunas
-(CodPr,CodSl), as quais são chave estrangeira da tabela de salas. A restrição de
-integridade referencial em questão especifica que uma linha na tabela de laboratórios
-somente existe, quando uma linha com a mesma chave existir na tabela de salas. A
-nível de modelo ER, isso significa que uma ocorrência da entidade laboratório somente
+<p>A tabela cuja chave primária é toda ela uma chave estrangeira representa uma entidade
+que forma uma especialização da entidade correspondente à tabela referenciada pela chave
+estrangeira. Um exemplo de tabela deste tipo é a tabela Laboratório que possui como
+chave primária as colunas (CodPr,CodSl), as quais são chave estrangeira da tabela de salas.
+A restrição de integridade referencial em questão especifica que uma linha na tabela de
+laboratórios somente existe, quando uma linha com a mesma chave existir na tabela de salas.
+A nível de modelo ER, isso significa que uma ocorrência da entidade laboratório somente
 pode existir quando a correspondente ocorrência da entidade sala existe, ou seja,
 significa que a entidade laboratório é uma especialização de sala. No exemplo, a
 única tabela deste tipo é a tabela Laboratório.</p>
@@ -649,19 +623,14 @@ ER, mas sim a relacionamentos, e por isso já foram tratadas nas etapas anterior
 entidades e dos relacionamentos. A regra para definição dos identificadores é
 a seguinte:</p>
 <h4 id="coluna-da-chave-primaria-que-nao-e-chave-estrangeira">Coluna da chave primária que não é chave estrangeira</h4>
-<p>Toda coluna que faz parte da chave primária e que não é chave estran-
-geira corresponde a um atributo identificador da entidade ou relaciona-
-mento.</p>
+<p>Toda coluna que faz parte da chave primária e que não é chave estrangeira
+corresponde a um atributo identificador da entidade ou relacionamento.</p>
 <h4 id="coluna-da-chave-primaria-que-e-chave-estrangeira">Coluna da chave primária que é chave estrangeira</h4>
-<p>Coluna da chave primária que é chave estrangeira Toda coluna que faz parte da
-chave primária e que é chave estrangeira corresponde a um identificador externo da
-entidade. Exemplificando, a coluna CodDisc, que é parte da chave primária da tabela
-Turma é tam-bém chave estrangeira em relação a tabela Disciplina. Portanto, a entidade
-TURMA é identificada também pelo relacionamento com DISCIPLINA.</p>
+<p>Toda coluna que faz parte da chave primária e que é chave estrangeira corresponde a um
+identificador externo da entidade. Exemplificando, a coluna CodDisc, que é parte da chave
+primária da tabela Turma é também chave estrangeira em relação a tabela Disciplina.
+Portanto, a entidade TURMA é identificada também pelo relacionamento com DISCIPLINA.</p>
 <p><img alt="mr-to-er-5" src="../images/mr/mr-to-er-5.png" /></p>
-<h1 id="exercicio">Exercício</h1>
-<p><img alt="ex-er-to-mr" src="../images/mr/ex-er-to-mr.png" /></p>
-<p><img alt="ex-er-to-mt-attr" src="../images/mr/ex-er-to-mt-attr.png" /></p>
                 
                   
                 
@@ -682,7 +651,7 @@ TURMA é identificada também pelo relacionamento com DISCIPLINA.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../aula9/" title="Aula 9 (2019-05-07)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../aula10/" title="Aula 10 (2019-05-09)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -691,19 +660,19 @@ TURMA é identificada também pelo relacionamento com DISCIPLINA.</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Aula 9 (2019-05-07)
+                Aula 10 (2019-05-09)
               </span>
             </div>
           </a>
         
         
-          <a href="../aula11/" title="Aula 11 (2019-05-14)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Aula 11 (2019-05-14)
+                Exercícios 1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
