@@ -6,6 +6,8 @@ Uma tabela pode corresponder a:
 * Um relacionamento n:n;
 * Uma entidade especializada.
 
+![mr-eng-rev](../images/mr/mr-eng-rev.png)
+
 #### Regra 1: chave primária composta por mais de uma chave estrangeira
 
 A tabela que possui uma chave primária composta de múltiplas chaves estrangeiras
@@ -91,6 +93,3 @@ primária da tabela Turma é também chave estrangeira em relação a tabela Dis
 Portanto, a entidade TURMA é identificada também pelo relacionamento com DISCIPLINA.
 
 ![mr-to-er-5](../images/mr/mr-to-er-5.png)
-
-
-
