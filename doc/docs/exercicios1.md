@@ -325,5 +325,9 @@ e) disponibilidade de determinados assentos em um trecho de vôo.
 
 ## 1.9 Transformar o diagrama de ER abaixo para o MR.
 
-![er-exerc-5-1.svg](../images/er-exerc-5-1.svg)
-[er-exerc-5-1.svg](../images/er-exerc-5-1.svg)
+![er-exerc-5-1](../images/exerc/exerc-er-alternativa.svg)
+[er-alternativa](../images/exerc/exerc-er-alternativa.svg)
+
+![er-anterior](../images/er-exerc-5-1.svg)
+[er-anterior](../images/er-exerc-5-1.svg)
+
