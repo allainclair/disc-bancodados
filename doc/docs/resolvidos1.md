@@ -74,3 +74,111 @@
 |9         |4          |5     |
 
 Diminuiu duas instâncias na tabela **Nota**.
+
+## 1.8 versão 1
+
+## Relações / Tabelas
+
+### Similaridade
+
+<u>CódigoTipoVeículo1</u>, <u>CódigoTipoVeículo2</u>
+
+### Tipo de Veículo
+
+<u>Código</u>, Nome, ArCondicionado, Tipo, NúmeroPortas, DireçãoHidráulica, CâmbioAutomático, Rádio, NúmeroDePassageiros, Leito, Sanitário
+
+* NúmeroPortas, DireçãoHidráulica, CâmbioAutomático e Rádio são originais da entidade automóvel;
+
+* NúmeroDePassageiros, Leito, Sanitário são originais da entidade ônibus.
+
+### Veículo
+
+<u>Número</u>, DataPróximaManutenção, Placa, CódigoTipoVeículo
+
+* CódigoTipoVeículo é original da entidade Tipo de Veículo.
+
+### Contrato Aluguel
+
+<u>Número, NúmeroEscritório</u>, Data, Duração, NúmeroVeículo,  
+NúmeroCarteiraMotorista
+
+* NúmeroVeículo é original da entidade Veículo;
+* NúmeroCarteiraMotorista é original da entidade Cliente;
+* NúmeroEscritório é original da entidade Escritório.
+
+### Escritório
+
+<u>Número</u>, Local
+
+### Cliente
+
+<u>NúmeroCarteiraMotorista</u>, EstadoCarteiraMotorista, Nome, Endereço,
+Telefone
+
+## 1.8 versão 2
+
+## Relações / Tabelas
+
+### Similaridade
+
+<u>CódigoTipoVeículo1</u>, <u>CódigoTipoVeículo2</u>
+
+### Tipo de Veículo
+
+<u>Código</u>, Nome, ArCondicionado, Tipo
+
+### Automóvel
+
+<u>CódigoTipoVeículo</u>, NúmeroPortas, DireçãoHidráulica, CâmbioAutomático, Rádio
+
+* CódigoTipoVeículo é original da entidade Tipo de Veículo.
+
+### Ônibus
+
+<u>CódigoTipoVeículo</u>, NúmeroDePassageiros, Leito, Sanitário
+
+* CódigoTipoVeículo é original da entidade Tipo de Veículo.
+
+### Veículo
+
+<u>Número</u>, DataPróximaManutenção, Placa, CódigoTipoVeículo
+
+* CódigoTipoVeículo é original da entidade Tipo de Veículo.
+
+### Contrato Aluguel
+
+<u>Número, NúmeroEscritório</u>, Data, Duração, NúmeroVeículo,  
+NúmeroCarteiraMotorista
+
+* NúmeroVeículo é original da entidade Veículo;
+* NúmeroCarteiraMotorista é original da entidade Cliente;
+* NúmeroEscritório é original da entidade Escritório.
+
+### Escritório
+
+<u>Número</u>, Local
+
+### Cliente
+
+<u>NúmeroCarteiraMotorista</u>, EstadoCarteiraMotorista, Nome, Endereço,
+Telefone
+
+## 1.9
+
+## Relações / Tabelas
+
+### Fornecedor
+
+<u>Id</u>, Região, Nome
+
+### Email
+
+<u>IdFornecedor, Texto</u>
+
+* IdFornecedor é original da entidade Fornecedor.
+
+### Telefone
+
+<u>IdFornecedor, Número</u>
+
+* IdFornecedor é original da entidade Fornecedor.

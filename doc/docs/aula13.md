@@ -12,7 +12,7 @@ Modelar um pedido contendo apenas uma bebida e depois uma compra tendo vários p
 
 * Bebida(<u>id</u>, volume, tipo, marca);
 
-* Pedido(<u>id_compra, id_bebida</u>);
+* Pedido(<u>id_compra, id_bebida</u>, **quantidade**);
 
 * Compra(<u>id</u>, data, valor).
 
@@ -21,7 +21,7 @@ Como funciona na prática?
 1. A compra foi feita e registrada na **Tabela Compra**;
 2. Dado o **id da compra** é possível buscar todas as bebidas dessa compra
    devido ao da **id_compra** e **id_bebida** na **Tabela Pedido**.
-   
+
 ### Segundo passo
 
 Adicionar o Fornecedor no modelo.
@@ -30,7 +30,7 @@ Adicionar o Fornecedor no modelo.
 
 * Bebida(<u>id</u>, volume, tipo, marca);
 
-* Pedido(<u>id_compra, id_bebida</u>);
+* Pedido(<u>id_compra, id_bebida</u>, quantidade);
 
 * Compra(<u>id</u>, data, valor, **id_fornecedor**);
 
@@ -42,7 +42,7 @@ Adicionar o Fornecedor no modelo.
 
 * Bebida(<u>id</u>, volume, tipo, marca);
 
-* Carrinho(<u>id_compra, id_bebida</u>);
+* Carrinho(<u>id_compra, id_bebida</u>, quantidade);
 
 * Venda(<u>id</u>, data, valor, **id_cliente**);
 

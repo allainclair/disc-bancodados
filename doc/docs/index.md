@@ -4,7 +4,7 @@
 
 ### Prova 1 - 2019-06-04 - 19:30h - 21:10h
 
-### [Trabalho 1](trabalho1.md) - 2019-06-03 - 23:59:59 - horário de recebimento
+### [Trabalho 1](trabalho1.md) - 2019-06-03 - 23:59:59 - horário de recebimento.
 
 Alunos com plano de aula enviar um email para mim informando o conflito de
 disciplinas.
