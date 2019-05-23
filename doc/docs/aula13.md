@@ -49,7 +49,6 @@ Adicionar o Fornecedor no modelo.
 * Cliente(<u>id</u>, p_nome, u_nome, nascimento, sexo).
 
 ![exerc-er-alternativa](../images/exerc/exerc-er-alternativa.svg)
-
 [exerc-er-alternativa](../images/exerc/exerc-er-alternativa.svg)
 
 ![exerc-er-alternativa-1](../images/exerc/exerc-er-alternativa-1.svg)
