@@ -32,7 +32,7 @@ do sistema e banco. Dessa forma passos posteriores devem ser revistos.
 
 ### Análise
 
-Análise dos requisitos levantos é feita para que depois seja projetado o sistema
+Análise dos requisitos levantados é feita para que depois seja projetado o sistema
 (e o BD).
 
 Os requisitos devem ser analisados do ponto de vista de viabilidade e riscos por
@@ -61,17 +61,17 @@ excluir dados do banco de dados.
 
 O teste tem um papel de valiar o sistema e banco após estes serem implementados.
 Muitas vezes testes são feitos junto com implementação, para que testes já indiquem
-possíveis erros de implementação antecipadamente. 
+possíveis erros de implementação antecipadamente.
 
 
 ![req-ana-proj-imp-test](../images/req-ana-proj-imp-test.svg)
 
 
-## Algera Relacional e SQL
+## Álgebra Relacional e SQL
 
-Historicamente a algebra e cálculo relacional foram desenvolvidos antes da
+Historicamente a álgebra e cálculo relacional foram desenvolvidos antes da
 linguagem SQL. SQL é primariamente baseada em conceitos de cálculo relacional e
-foi extendida para incorporar alguns conceitos de algebra também.
+foi extendida para incorporar alguns conceitos de álgebra também.
 
 Devido a maioria dos SGBDs usarem SQL como sua linguagem, SQL pode ser apresentada
 antes.
@@ -80,7 +80,7 @@ antes.
 
 * Linguagem *declarativa*: o usuário especifica *qual* resultado deve ser, e deixa
   a otimizacação e decisão de *como* executar a *query* ("pergunta") para o SGBD;
-  
+
 ### Definição de dados e tipo de dados
 
 SQL usa os termos ***table***, ***row*** e ***column*** do modelo relacional:
@@ -125,7 +125,7 @@ O conceito de catálogo ***catalog*** é um nome para um coleção de esquemas.
 Usado para especificar uma nova relação ao dar um nome e especificando seus
 atributos e restrições iniciais. Os atributos são especificados primeiro,
 e cada atributo é dado um nome, tipos de dados (*data type*) especificam o domínio
-dos valores e possivelmente as restrições de atributos, como por exemplo `ǸOT NULL`
+dos valores e possivelmente as restrições de atributos, como por exemplo `NOT NULL`
 (não nulo).
 
 A chave (*key*), integridade de entidade, e restrições de integridade referenciais
