@@ -1,0 +1,937 @@
+
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Disciplina de banco de dados">
+      
+      
+        <link rel="canonical" href="https://github.com/allainclair/aula14/">
+      
+      
+        <meta name="author" content="Allainclair Flausino dos Santos">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="en, pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>Aula 14 (2019-05-23) - Banco de dados</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#passos-para-trabalhar-se-com-bd-conceitos-de-engenharia-de-software" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/allainclair" title="Banco de dados" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Banco de dados
+            </span>
+            <span class="md-header-nav__topic">
+              Aula 14 (2019-05-23)
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/allainclair" title="Banco de dados" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Banco de dados
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introdução" class="md-nav__link">
+      Introdução
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula1/" title="Aula 1 (2019-04-02)" class="md-nav__link">
+      Aula 1 (2019-04-02)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula2/" title="Aula 2 (2019-04-04)" class="md-nav__link">
+      Aula 2 (2019-04-04)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula3/" title="Aula 3 (2019-04-09)" class="md-nav__link">
+      Aula 3 (2019-04-09)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula4/" title="Aula 4 (2019-04-11)" class="md-nav__link">
+      Aula 4 (2019-04-11)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula5/" title="Aula 5 (2019-04-16)" class="md-nav__link">
+      Aula 5 (2019-04-16)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula6/" title="Aula 6 (2019-04-23)" class="md-nav__link">
+      Aula 6 (2019-04-23)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula7/" title="Aula 7 (2019-04-25)" class="md-nav__link">
+      Aula 7 (2019-04-25)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula8/" title="Aula 8 (2019-05-02)" class="md-nav__link">
+      Aula 8 (2019-05-02)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula9/" title="Aula 9 (2019-05-07)" class="md-nav__link">
+      Aula 9 (2019-05-07)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula10/" title="Aula 10 (2019-05-09)" class="md-nav__link">
+      Aula 10 (2019-05-09)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula11/" title="Aula 11 (2019-05-14)" class="md-nav__link">
+      Aula 11 (2019-05-14)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula12/" title="Aula 12 (2019-05-16)" class="md-nav__link">
+      Aula 12 (2019-05-16)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula13/" title="Aula 13 (2019-05-21)" class="md-nav__link">
+      Aula 13 (2019-05-21)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 14 (2019-05-23)
+      </label>
+    
+    <a href="./" title="Aula 14 (2019-05-23)" class="md-nav__link md-nav__link--active">
+      Aula 14 (2019-05-23)
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passos-para-trabalhar-se-com-bd-conceitos-de-engenharia-de-software" title="Passos para trabalhar-se com BD: conceitos de engenharia de software" class="md-nav__link">
+    Passos para trabalhar-se com BD: conceitos de engenharia de software
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" title="Requisitos" class="md-nav__link">
+    Requisitos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise" title="Análise" class="md-nav__link">
+    Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projeto" title="Projeto" class="md-nav__link">
+    Projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementacao" title="Implementação" class="md-nav__link">
+    Implementação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste" title="Teste" class="md-nav__link">
+    Teste
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algera-relacional-e-sql" title="Algera Relacional e SQL" class="md-nav__link">
+    Algera Relacional e SQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-structured-query-language" title="SQL (Structured Query Language)" class="md-nav__link">
+    SQL (Structured Query Language)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-dados-e-tipo-de-dados" title="Definição de dados e tipo de dados" class="md-nav__link">
+    Definição de dados e tipo de dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog" title="Catálogo (catalog)" class="md-nav__link">
+    Catálogo (catalog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-create-table-em-sql" title="Comando CREATE TABLE em SQL" class="md-nav__link">
+    Comando CREATE TABLE em SQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo_1" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo_2" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
+      Exercícios 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resolvidos1/" title="Resolvidos 1" class="md-nav__link">
+      Resolvidos 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../trabalho1/" title="Trabalho 1" class="md-nav__link">
+      Trabalho 1
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passos-para-trabalhar-se-com-bd-conceitos-de-engenharia-de-software" title="Passos para trabalhar-se com BD: conceitos de engenharia de software" class="md-nav__link">
+    Passos para trabalhar-se com BD: conceitos de engenharia de software
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" title="Requisitos" class="md-nav__link">
+    Requisitos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise" title="Análise" class="md-nav__link">
+    Análise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projeto" title="Projeto" class="md-nav__link">
+    Projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementacao" title="Implementação" class="md-nav__link">
+    Implementação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste" title="Teste" class="md-nav__link">
+    Teste
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algera-relacional-e-sql" title="Algera Relacional e SQL" class="md-nav__link">
+    Algera Relacional e SQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-structured-query-language" title="SQL (Structured Query Language)" class="md-nav__link">
+    SQL (Structured Query Language)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicao-de-dados-e-tipo-de-dados" title="Definição de dados e tipo de dados" class="md-nav__link">
+    Definição de dados e tipo de dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-catalog" title="Catálogo (catalog)" class="md-nav__link">
+    Catálogo (catalog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-create-table-em-sql" title="Comando CREATE TABLE em SQL" class="md-nav__link">
+    Comando CREATE TABLE em SQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo_1" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo_2" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Aula 14 (2019-05-23)</h1>
+                
+                <h2 id="passos-para-trabalhar-se-com-bd-conceitos-de-engenharia-de-software">Passos para trabalhar-se com BD: conceitos de engenharia de software</h2>
+<ul>
+<li>
+<p>Requisitos;</p>
+</li>
+<li>
+<p>Análise;</p>
+</li>
+<li>
+<p>Projeto;</p>
+</li>
+<li>
+<p>Implementação;</p>
+</li>
+<li>
+<p>Teste.</p>
+</li>
+</ul>
+<h3 id="requisitos">Requisitos</h3>
+<p>Textos, conversas, formulários, relatórios, etc são fontes para se formular os
+requisitos de um sistema computactional e muitas vezes extendendo-se para requisitos
+do banco de dados desse sistema.</p>
+<p>Aconselha-se documentar-se os requisitos, pois:</p>
+<ul>
+<li>Geralmente existe uma quantidade grande de requistios;</li>
+<li>A partir deles são analisadas e projetadas as funcionalidades do sistema e portanto
+  o banco de dados por consequência;</li>
+<li>Prova do que foi discutido para se analisar, projetar e implementar.</li>
+</ul>
+<p>Requisitos é a parte primordial do sistema e banco de dados, com eles gera-se
+um escopo (limite) de até onde deve-se desenvolver o sistema.</p>
+<p><strong>Muitas vezes</strong> os requisitos são modificados, principalmente no começo da proposta
+do sistema e banco. Dessa forma passos posteriores devem ser revistos.</p>
+<h3 id="analise">Análise</h3>
+<p>Análise dos requisitos levantos é feita para que depois seja projetado o sistema
+(e o BD).</p>
+<p>Os requisitos devem ser analisados do ponto de vista de viabilidade e riscos por
+exemplo. Alguns requisitos podem ser muito difíceis de se criar funcionalidades, e
+portando levar muito tempo ou demandar muita mão-de-obra. Logo tudo isso deve
+ser discutido para iniciar-se o projeto.</p>
+<h3 id="projeto">Projeto</h3>
+<p>Requisitos são mapeados para funcionalidades nesse passo.</p>
+<p>Questões de projeto de infra-estrutura: servidores, rede, banco de dados, etc.</p>
+<p>Protótipos, diagramas do sistemas e banco são sintetizados.</p>
+<h3 id="implementacao">Implementação</h3>
+<p>O banco de dados é implementado na infra-estrutura definida. Dessa forma já pode
+ser usado para criar tabelas, fazer consultas e povoar esse banco.</p>
+<p>Estamos aqui, iniciaremos a criação de fato de um banco, e conhecer ferramentas
+para fazer consultas no banco para: criar, inserir, atualizar, selecionar (ler) e
+excluir dados do banco de dados.</p>
+<h3 id="teste">Teste</h3>
+<p>O teste tem um papel de valiar o sistema e banco após estes serem implementados.
+Muitas vezes testes são feitos junto com implementação, para que testes já indiquem
+possíveis erros de implementação antecipadamente. </p>
+<p><img alt="req-ana-proj-imp-test" src="../images/req-ana-proj-imp-test.svg" /></p>
+<h2 id="algera-relacional-e-sql">Algera Relacional e SQL</h2>
+<p>Historicamente a algebra e cálculo relacional foram desenvolvidos antes da
+linguagem SQL. SQL é primariamente baseada em conceitos de cálculo relacional e
+foi extendida para incorporar alguns conceitos de algebra também.</p>
+<p>Devido a maioria dos SGBDs usarem SQL como sua linguagem, SQL pode ser apresentada
+antes.</p>
+<h2 id="sql-structured-query-language">SQL (Structured Query Language)</h2>
+<ul>
+<li>Linguagem <em>declarativa</em>: o usuário especifica <em>qual</em> resultado deve ser, e deixa
+  a otimizacação e decisão de <em>como</em> executar a <em>query</em> ("pergunta") para o SGBD;</li>
+</ul>
+<h3 id="definicao-de-dados-e-tipo-de-dados">Definição de dados e tipo de dados</h3>
+<p>SQL usa os termos <strong><em>table</em></strong>, <strong><em>row</em></strong> e <strong><em>column</em></strong> do modelo relacional:
+<em>relação</em>, <em>tupla</em> e <em>atributo</em> respectivamente. Podemos usar esses termos de forma
+intercambiável.</p>
+<p><img alt="table" src="../images/sql/table.svg" /></p>
+<p>O comando CREATE pode ser usado para criar <em>schemas</em>, <em>tables</em>, <em>types</em> e <em>domains</em>,
+entre outras ações.</p>
+<h4 id="schema">Schema</h4>
+<ul>
+<li>Pode ser chamado em algumas linguagens como <em>database</em>;</li>
+<li>Definido por um <em>nome</em> (<strong><em>schema name</em></strong>);</li>
+<li>Tem um identificador de autorização (<strong><em>authorization identifier</em></strong>) para
+  identificar quem é o o dono do <em>schema</em>, assim como descritores
+  <strong><em>descriptors</em></strong> para cada elemento (<strong><em>element</em></strong>) do esquema;</li>
+<li>Elementos do esquema (<strong><em>element</em></strong>) incluem tabelas, tipos, restrições, visões,
+  etc;</li>
+<li>Esquemas são criados com a declaração <code>CREATE SCHEMA</code>.</li>
+</ul>
+<h5 id="exemplo">Exemplo</h5>
+<p>Para criar um esquema chamado <code>COMPANY</code> em que o dono é o usuário <code>Jsmith</code>:</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">SQL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">SCHEMA</span> <span class="n">COMPANY</span> <span class="k">AUTHORIZATION</span> <span class="s1">&#39;Jsmith&#39;</span><span class="p">;</span>
+</pre></div></div>
+</div>
+<p>Em geral nem todos usuários são autorizados a criar esquemas e elementos.
+Esse privilégio deve ser dado por uma conta de administrador do SGDB, um <em>DBA</em>
+(Database Admin).</p>
+<h4 id="catalogo-catalog">Catálogo (<em>catalog</em>)</h4>
+<p>O conceito de catálogo <strong><em>catalog</em></strong> é um nome para um coleção de esquemas.</p>
+<h4 id="comando-create-table-em-sql">Comando <code>CREATE TABLE</code> em SQL</h4>
+<p>Usado para especificar uma nova relação ao dar um nome e especificando seus
+atributos e restrições iniciais. Os atributos são especificados primeiro,
+e cada atributo é dado um nome, tipos de dados (<em>data type</em>) especificam o domínio
+dos valores e possivelmente as restrições de atributos, como por exemplo <code>ǸOT NULL</code>
+(não nulo).</p>
+<p>A chave (<em>key</em>), integridade de entidade, e restrições de integridade referenciais
+podem ser especificadas dentro de <code>CREATE TABLE</code> depois dos atributos declarados, ou
+podem ser adicionados depois ao usar o comando <code>ALTER TABLE</code>.</p>
+<p>As tabelas criadas com <code>CREATE TABLE</code> são chamadas de <strong>tabelas base</strong>, pois essas
+tabelas são realmente criadas em arquivos pelo SGBD.</p>
+<h5 id="exemplo_1">Exemplo</h5>
+<p>Para criar uma tabela dentro do esquema da <code>COMPANY</code>:</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">SQL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">COMPANY</span><span class="p">.</span><span class="n">EMPLOYEE</span>
+</pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">SQL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">EMPLOYEE</span>
+</pre></div></div>
+</div>
+<h4 id="exemplo_2">Exemplo</h4>
+<p><img alt="sql-create-tables" src="../images/sql/sql-create-tables.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../aula13/" title="Aula 13 (2019-05-21)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Aula 13 (2019-05-21)
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Exercícios 1
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.267712eb.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
