@@ -101,11 +101,57 @@ VALUES      (9, 1, 'Hamilton', 'M', 1300, 4);
 /* Seleciona id e nome da tabela Departamento. Onde bloco = 'F10' */
 /* SELECT id, nome FROM Departamento WHERE bloco = 'F10'; */
 
-/* */
 /* SELECT ALL salario FROM Empregado */
 /* SELECT DISTINCT salario FROM Empregado */
-/* SELECT DISTINCT nome, salario FROM Empregado */
+/* SELECT DISTINCT nome, salario FROM Empregado; */
 
-/* SELECT e.nome, e.salario, d.nome
-*  FROM Empregado AS e, Departamento AS d
-*  WHERE e.departamento_id = 2 AND d.nome = 'Informatica' */
+/* SELECT *
+*  FROM Empregado AS E, Departamento AS D; */
+
+/* SELECT E.nome, E.salario, D.nome
+*  FROM Empregado AS E, Departamento AS D;*/
+
+/* SELECT E.nome, E.salario, D.nome
+*  FROM Empregado AS E, Departamento AS D
+*  WHERE D.nome = 'Informatica'; */
+
+/* SELECT E.nome, E.salario, D.nome
+*  FROM Empregado AS E, Departamento AS D
+*  WHERE D.nome = 'Informatica' AND E.departamento_id = D.id; */
+
+/* SELECT nome, salario
+* FROM Empregado
+ORDER BY salario; */
+
+/* SELECT nome, salario
+* FROM Empregado
+ORDER BY salario DESC; */
+
+/* SELECT nome, salario
+* FROM Empregado
+* ORDER BY salario, nome */
+
+/* SELECT nome, salario
+* FROM Empregado
+* WHERE salario BETWEEN 1200 AND 1350; */
+
+/* SELECT nome, salario
+* FROM Empregado
+* WHERE salario BETWEEN 1200 AND 1350; */
+
+/* SELECT nome, salario, super_id
+*  FROM Empregado
+*  WHERE super_id IS NOT NULL; */
+
+/* SELECT nome, salario
+*  FROM Empregado
+*  WHERE nome LIKE '_a%'; */
+
+/* SELECT count(*)
+*  FROM Empregado; */
+
+/* SELECT COUNT(*)
+*  FROM Departamento; */
+
+/* SELECT SUM(salario)
+*  FROM Empregado;*/
