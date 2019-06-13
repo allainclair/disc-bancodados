@@ -1,3 +1,5 @@
+/* http://www.sqlfiddle.com/ */
+
 /* Tabelas */
 
 CREATE TABLE Departamento(
@@ -94,3 +96,7 @@ VALUES      (5, 1, 'Jose', 'M', 1400, 2);
 /* SELECT e.nome, e.salario, d.nome
 *  FROM Empregado AS e, Departamento AS d
 *  WHERE e.departamento_id = 2 AND d.nome = 'Informatica' */
+
+SELECT E.nome, E.salario, D.nome
+FROM Empregado AS E, Departamento AS D
+WHERE D.nome = 'Informatica'

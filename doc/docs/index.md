@@ -23,6 +23,7 @@ disciplinas.
 * **Local**: Bloco E90, sala 1
 * **Site:** [https://allainclair.github.io/disc-bancodados/](
   https://allainclair.github.io/disc-bancodados/)
+* https://github.com/allainclair/disc-bancodados/
 
 ## Avaliação (projeto)
 
