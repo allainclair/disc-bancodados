@@ -352,6 +352,42 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../aula15/" title="Aula 15 (2019-06-06)" class="md-nav__link">
+      Aula 15 (2019-06-06)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula16/" title="Aula 16 (2019-06-11)" class="md-nav__link">
+      Aula 16 (2019-06-11)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula17/" title="Aula 17 (2019-06-13)" class="md-nav__link">
+      Aula 17 (2019-06-13)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -433,15 +469,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#18-exercicio-er-mr" title="1.8 Exercício ER -&gt; MR" class="md-nav__link">
-    1.8 Exercício ER -&gt; MR
+  <a href="#19-exercicio-er-mr" title="1.9 Exercício ER -&gt; MR" class="md-nav__link">
+    1.9 Exercício ER -&gt; MR
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#19-transformar-o-diagrama-de-er-abaixo-para-o-mr" title="1.9 Transformar o diagrama de ER abaixo para o MR." class="md-nav__link">
-    1.9 Transformar o diagrama de ER abaixo para o MR.
+  <a href="#110-transformar-o-diagrama-de-er-abaixo-para-o-mr" title="1.10 Transformar o diagrama de ER abaixo para o MR." class="md-nav__link">
+    1.10 Transformar o diagrama de ER abaixo para o MR.
   </a>
   
 </li>
@@ -556,15 +592,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#18-exercicio-er-mr" title="1.8 Exercício ER -&gt; MR" class="md-nav__link">
-    1.8 Exercício ER -&gt; MR
+  <a href="#19-exercicio-er-mr" title="1.9 Exercício ER -&gt; MR" class="md-nav__link">
+    1.9 Exercício ER -&gt; MR
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#19-transformar-o-diagrama-de-er-abaixo-para-o-mr" title="1.9 Transformar o diagrama de ER abaixo para o MR." class="md-nav__link">
-    1.9 Transformar o diagrama de ER abaixo para o MR.
+  <a href="#110-transformar-o-diagrama-de-er-abaixo-para-o-mr" title="1.10 Transformar o diagrama de ER abaixo para o MR." class="md-nav__link">
+    1.10 Transformar o diagrama de ER abaixo para o MR.
   </a>
   
 </li>
@@ -593,8 +629,8 @@
 um número único, pode ter diversas localizações e um empregado que gerencia o
 departamento. Temos a data em que o empregado começou a gerenciar o departamento.
 Nem todo empregado gerencia necessariamente um departamento, mas um departamento
-deve ter um gerente. Um departamento pode controlar um número qualquer de 
-projetos, cada qual com um único nome, um único número e uma única localização. 
+deve ter um gerente. Um departamento pode controlar um número qualquer de
+projetos, cada qual com um único nome, um único número e uma única localização.
 Armazenamos o nome de cada empregado (Pnome + Unome), o número do seguro social,
 endereço, salário, sexo e data de nascimento. Um empregado obrigatoriamente está
 alocado a um departamento, mas pode trabalhar em diversos projetos que não são
@@ -606,35 +642,35 @@ dos dependentes de cada empregado para fins de seguro. Guardamos o primeiro nome
 sexo, data de nascimento de cada dependente, e o parentesco dele com o empregado.</p>
 <p>Faça um DER para esse domínio.</p>
 <h2 id="12-controle-de-um-museu-sistemas-de-banco-de-dados-esmasri-navathe">1.2 Controle de um museu (Sistemas de Banco de Dados, Esmasri &amp; Navathe)</h2>
-<p>Projete um banco de dados para controlar as informações de um museu de arte. 
+<p>Projete um banco de dados para controlar as informações de um museu de arte.
 Suponha que os seguintes requisitos sejam coletados:</p>
 <ul>
 <li>
 <p>O museu tem um coleção de objetos de arte. Cada objeto tem um único
-  identificador, um artista (se conhecido), um ano (quando foi criado, se 
-  conhecido), um título e uma descrição. Os objetos de arte são 
+  identificador, um artista (se conhecido), um ano (quando foi criado, se
+  conhecido), um título e uma descrição. Os objetos de arte são
   categorizados de diversas formas, conforme apresentado a seguir.</p>
 <ul>
 <li>
-<p>Os objetos são categorizados de acordo com o tipo. Há três principais: 
-  PINTURA, ESCULTURA, e outro tipo chamado OUTROS, para acomodar os 
+<p>Os objetos são categorizados de acordo com o tipo. Há três principais:
+  PINTURA, ESCULTURA, e outro tipo chamado OUTROS, para acomodar os
   objetos que não se enquadram em um dos dois tipos principais;</p>
 </li>
 <li>
-<p>Uma PINTURA tem um tipo de tinta (óleo, aquarela etc.), o suporte em 
+<p>Uma PINTURA tem um tipo de tinta (óleo, aquarela etc.), o suporte em
   que é desenhada (papel, tela, madeira etc.) e estilo (moderno, abstrato
   etc.);</p>
 </li>
 <li>
-<p>Uma ESCULTURA ou uma ESTATUARIA tem um material do qual foi criada 
+<p>Uma ESCULTURA ou uma ESTATUARIA tem um material do qual foi criada
  (madeira, pedra etc.), altura, peso e estilo;</p>
 </li>
 <li>
-<p>Um objeto de arte da categoria OUTROS possui um tipo (gravura, foto 
+<p>Um objeto de arte da categoria OUTROS possui um tipo (gravura, foto
   etc.) e estilo;</p>
 </li>
 <li>
-<p>Os objetos de arte também são categorizados como COLECAO PERMANENTE, que 
+<p>Os objetos de arte também são categorizados como COLECAO PERMANENTE, que
   são propriedade do museu (contêm informação sobre a data de aquisição,
   se estão em exposição ou no depósito e o custo, ou EMPRESTADO, que possui
   informação referente à coleção (da qual foi emprestado), data de empréstimo
@@ -648,17 +684,17 @@ Suponha que os seguintes requisitos sejam coletados:</p>
   estilo principal e descrição. Admite-se o nome como único;</p>
 </li>
 <li>
-<p>Diferentes exposições ocorrem, cada uma tendo um nome, data de início e 
-  data final. As exposições  estão relacionadas a todos os objetos de arte 
+<p>Diferentes exposições ocorrem, cada uma tendo um nome, data de início e
+  data final. As exposições  estão relacionadas a todos os objetos de arte
   que estiveram em exibição durante o evento;</p>
 </li>
 <li>
-<p>São mantidas as informações de outras coleções com as quais o museu mantém 
-  contato, incluindo nome (único), tipo (museu, pessoal etc.), descrição, 
+<p>São mantidas as informações de outras coleções com as quais o museu mantém
+  contato, incluindo nome (único), tipo (museu, pessoal etc.), descrição,
   endereço, telefone atual e pessoa para contato;</p>
 </li>
 <li>
-<p>Desenhe um diagrama do esquema ERR para essa aplicação. Discuta todas as 
+<p>Desenhe um diagrama do esquema ERR para essa aplicação. Discuta todas as
   considerações fetias por  você e justifique suas escolhas para o projeto ERR.</p>
 </li>
 </ul>
@@ -671,13 +707,13 @@ dano. Considere atributos para cada entidade envolvida.</p>
 <p>Construa um diagrama ER para a administradora de imóveis descrita abaixo.</p>
 <ul>
 <li>
-<p>A administradora trabalha tanto com administração de condomínios, quanto 
+<p>A administradora trabalha tanto com administração de condomínios, quanto
   com a administração de aluguéis;</p>
 </li>
 <li>
-<p>Uma entrevista com o gerente da administradora resultou nas seguintes 
+<p>Uma entrevista com o gerente da administradora resultou nas seguintes
   informações: a administradora administra condomínios formados por unidades
-  condominiais; cada unidade condominial é de propriedade de uma ou mais 
+  condominiais; cada unidade condominial é de propriedade de uma ou mais
   pessoas. Uma pessoa pode possuir diversas unidades; e, cada unidade pode estar
   alugada para no máximo uma pessoa. Uma pessoa pode alugar diversas unidades.</p>
 </li>
@@ -693,7 +729,7 @@ alunos em cada curso em que são matriculados precisam ser corretamente modelado
 Construa um DER para o órgão de registro. Documente todas as suposições que você
 fizer sobre as restrições de mapeamento.</p>
 <h2 id="16-sistema-para-locadora-de-veiculos-projeto-de-banco-de-dados-carlos-alberto-heuser">1.6 Sistema para locadora de veículos (Projeto de Banco de Dados, Carlos Alberto Heuser)</h2>
-<p>O objetivo deste estudo de caso é construir um diagrama ER para o banco de 
+<p>O objetivo deste estudo de caso é construir um diagrama ER para o banco de
 dados de uma empresa de locação de veículos. A empresa em questão aluga
 automóveis, caminhonetes de passageiros e caminhonetes de carga. Ela atende a
 dois mercados, o das pessoas físicas e o das pessoas jurídicas.</p>
@@ -708,7 +744,7 @@ Entretanto, como veículos podem ser alugados para viagens em um sentido somente
 eles podem mudar de filial. Um veículo é identificado pela sua placa. Além disso,
 é necessário conhecer o número do chassis, o número do motor, o tipo de veículo e
 a cor de cada veículo.</p>
-<p>O sistema em computador deverá registrar: os veículos disponíveis em determinada 
+<p>O sistema em computador deverá registrar: os veículos disponíveis em determinada
 filial na data corrente; as reservas para cada veículo em uma filial, com
 previsão de que veículos estarão disponíveis em uma data futura; e, os veículos
 presentemente alugados pela filial, o ponto de entrega (caso seja diferente do de
@@ -757,57 +793,57 @@ congresso.</p>
 <p>O comitê de programa (CP) executa as funções listadas abaixo:</p>
 <ul>
 <li>
-<p>O CP está encarregado de recepção de artigos submetidos, controlando se 
+<p>O CP está encarregado de recepção de artigos submetidos, controlando se
   eles estão dentro do prazo. Um artigo é um trabalho que um ou mais autores
   pretendem apresentar no congresso e que será publicado em seus anais. Os anais
-  são normalmente publicados por editoras comerciais. Por isso, os artigos 
-  devem ser originais, isto é, cada artigo somente pode ser submetido a um 
+  são normalmente publicados por editoras comerciais. Por isso, os artigos
+  devem ser originais, isto é, cada artigo somente pode ser submetido a um
   congresso. Os artigos são numerados seqüencialmente dentro de um congresso, à
   medida que vão sendo recebidos. É necessário saber o título do artigo, bem
   como seus autores;</p>
 </li>
 <li>
 <p>Antes do início da avaliação dos artigos, o CP deve montar um corpo de
-  avaliadores externos que irá ler cada artigo e emitir uma opinião sobre o 
-  artigo. Normalmente, mas não necessariamente, avaliadores externos são 
-  pessoas que já participaram de congressos anteriores sobre o mesmo tema. 
-  Somente será cadastrado como avaliador de um congresso aquele que, após 
+  avaliadores externos que irá ler cada artigo e emitir uma opinião sobre o
+  artigo. Normalmente, mas não necessariamente, avaliadores externos são
+  pessoas que já participaram de congressos anteriores sobre o mesmo tema.
+  Somente será cadastrado como avaliador de um congresso aquele que, após
   convidado para tal, o aceitar explicitamente;</p>
 </li>
 <li>
 <p>À medida que os artigos forem sendo recebidos, eles devem ser distribuídos
   aos  avaliadores previamente cadastrados. Cada artigo deve ser distribuído a
-  pelo menos três avaliadores. Um avaliador nunca deve estar com mais de um 
+  pelo menos três avaliadores. Um avaliador nunca deve estar com mais de um
   artigo em um instante de tempo;</p>
 </li>
 <li>
 <p>O CP está encarregado de fazer o julgamento dos artigos. No julgamento, o CP
   decide quais artigos serão aceitos e quais serão rejeitados com base nos
-  pareceres dos avaliadores. O julgamento acontece um certo tempo depois do 
+  pareceres dos avaliadores. O julgamento acontece um certo tempo depois do
   fim do prazo de recepção dos artigos;</p>
 </li>
 <li>
 <p>Após o julgamento o CP deve montar o programa do congresso, isto é, agrupar
   os artigos aceitos em sessões e escolher um moderador para cada sessão. Uma
   sessão é um grupo de artigos que tratam de um assunto comum e que são
-  apresentados em um determinado horário. Por tratar-se de um congresso de 
-  trabalho, não há sessões em paralelo, isto é, em um congresso, em um 
+  apresentados em um determinado horário. Por tratar-se de um congresso de
+  trabalho, não há sessões em paralelo, isto é, em um congresso, em um
   momento no  tempo, não pode ocorrer mais que uma sessão. Assim, a sessão é
   identificada pelo congresso e pelo horário em que ocorre;</p>
 </li>
 <li>
-<p>Além das tarefas acima, o CP está encarregado de toda comunicação com os 
+<p>Além das tarefas acima, o CP está encarregado de toda comunicação com os
   autores e com os avaliadores.</p>
 </li>
 </ul>
 <p>O comitê organizador (CO) está encarregado de toda parte financeira e organização
-local do congresso. Para fins do estudo de caso, vamos considerar apenas as 
+local do congresso. Para fins do estudo de caso, vamos considerar apenas as
 seguintes atividades:</p>
 <ul>
 <li>
 <p>Com boa antecedência, o CO deve emitir as chamadas de trabalho do congresso
   . A chamada de trabalhos é um texto que divulga o congresso e que convida as
-  pessoas a submeter artigos ao congresso. Esta chamada é amplamente 
+  pessoas a submeter artigos ao congresso. Esta chamada é amplamente
   divulgada em listas eletrônicas, periódicos, etc. Além disso ela deve ser
   enviada pessoalmente, por correio eletrônico, às seguintes pessoas:</p>
 <ul>
@@ -815,10 +851,10 @@ seguintes atividades:</p>
 <p>Membros dos GT que promovem o congresso;</p>
 </li>
 <li>
-<p>Pessoas que de alguma forma já participaram de congressos promovidos 
+<p>Pessoas que de alguma forma já participaram de congressos promovidos
   pelos GT que promovem o congresso e;</p>
 </li>
-<li>Pessoas sugeridas para tal pelos membros dos GT que promovem o 
+<li>Pessoas sugeridas para tal pelos membros dos GT que promovem o
   congresso.</li>
 </ul>
 </li>
@@ -882,10 +918,10 @@ que os clientes podem querer fazer:</p>
 <p>c) horários de chegada ou de saída em determinados vôos;</p>
 <p>d) disponibilidade de vagas em um trecho de vôo;</p>
 <p>e) disponibilidade de determinados assentos em um trecho de vôo.</p>
-<h2 id="18-exercicio-er-mr">1.8 Exercício ER -&gt; MR</h2>
+<h2 id="19-exercicio-er-mr">1.9 Exercício ER -&gt; MR</h2>
 <p><img alt="ex-er-to-mr" src="../images/mr/ex-er-to-mr.png" /></p>
 <p><img alt="ex-er-to-mt-attr" src="../images/mr/ex-er-to-mt-attr.png" /></p>
-<h2 id="19-transformar-o-diagrama-de-er-abaixo-para-o-mr">1.9 Transformar o diagrama de ER abaixo para o MR.</h2>
+<h2 id="110-transformar-o-diagrama-de-er-abaixo-para-o-mr">1.10 Transformar o diagrama de ER abaixo para o MR.</h2>
 <p><img alt="er-exerc-5-1" src="../images/exerc/exerc-er-alternativa.svg" />
 <a href="../images/exerc/exerc-er-alternativa.svg">er-alternativa</a></p>
 <p><img alt="er-anterior" src="../images/er-exerc-5-1.svg" />
@@ -910,7 +946,7 @@ que os clientes podem querer fazer:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../aula14/" title="Aula 14 (2019-05-23)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../aula17/" title="Aula 17 (2019-06-13)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -919,7 +955,7 @@ que os clientes podem querer fazer:</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Aula 14 (2019-05-23)
+                Aula 17 (2019-06-13)
               </span>
             </div>
           </a>

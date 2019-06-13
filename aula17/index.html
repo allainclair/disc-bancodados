@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina de banco de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/exercicios2/">
+        <link rel="canonical" href="https://github.com/allainclair/aula17/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Exercicios2 - Banco de dados</title>
+        <title>Aula 17 (2019-06-13) - Banco de dados</title>
       
     
     
@@ -81,6 +81,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#select-de-varias-tabelas" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -102,7 +106,7 @@
               Banco de dados
             </span>
             <span class="md-header-nav__topic">
-              Exercicios2
+              Aula 17 (2019-06-13)
             </span>
           
         </div>
@@ -372,11 +376,72 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../aula17/" title="Aula 17 (2019-06-13)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 17 (2019-06-13)
+      </label>
+    
+    <a href="./" title="Aula 17 (2019-06-13)" class="md-nav__link md-nav__link--active">
       Aula 17 (2019-06-13)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-de-varias-tabelas" title="SELECT de várias tabelas" class="md-nav__link">
+    SELECT de várias tabelas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-simples" title="Exemplo simples" class="md-nav__link">
+    Exemplo simples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-empregadodepartamento" title="Exemplos Empregado/Departamento" class="md-nav__link">
+    Exemplos Empregado/Departamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agrupamentos" title="Agrupamentos" class="md-nav__link">
+    Agrupamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -423,15 +488,162 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#select-de-varias-tabelas" title="SELECT de várias tabelas" class="md-nav__link">
+    SELECT de várias tabelas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-simples" title="Exemplo simples" class="md-nav__link">
+    Exemplo simples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-empregadodepartamento" title="Exemplos Empregado/Departamento" class="md-nav__link">
+    Exemplos Empregado/Departamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agrupamentos" title="Agrupamentos" class="md-nav__link">
+    Agrupamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Exercicios2</h1>
+                  <h1>Aula 17 (2019-06-13)</h1>
                 
-                
+                <h2 id="select-de-varias-tabelas">SELECT de várias tabelas</h2>
+<ul>
+<li>Combinação de todas as linhas: Produto Cartesiano</li>
+</ul>
+<h3 id="exemplo-simples">Exemplo simples</h3>
+<ul>
+<li>
+<p>Criar tabelas Nome1(a1, a2), Nome2(b1, b2) e Nome3(c)</p>
+</li>
+<li>
+<p>Inserir dados nas tabelas</p>
+</li>
+</ul>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">SQL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome1</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Marco&#39;</span><span class="p">,</span> <span class="s1">&#39;Mauricio&#39;</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome1</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Allan&#39;</span><span class="p">,</span> <span class="s1">&#39;Alladin&#39;</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome2</span><span class="p">(</span><span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Erica&#39;</span><span class="p">,</span> <span class="s1">&#39;Estela&#39;</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome2</span><span class="p">(</span><span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Bruna&#39;</span><span class="p">,</span> <span class="s1">&#39;Beatriz&#39;</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome3</span><span class="p">(</span><span class="k">c</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Hamilton&#39;</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Nome3</span><span class="p">(</span><span class="k">c</span><span class="p">)</span>
+<span class="k">VALUES</span>      <span class="p">(</span><span class="s1">&#39;Hugo&#39;</span><span class="p">);</span>
+</pre></div></div>
+</div>
+<ul>
+<li>Selecionar multiplas tabelas</li>
+</ul>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">SQL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span>   <span class="n">Nome1</span><span class="p">,</span> <span class="n">Nome2</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span>   <span class="n">Nome1</span><span class="p">,</span> <span class="n">Nome2</span><span class="p">,</span> <span class="n">Nome3</span><span class="p">;</span>
+</pre></div></div>
+</div>
+<h3 id="exemplos-empregadodepartamento">Exemplos Empregado/Departamento</h3>
+<ul>
+<li>
+<p>ORDER BY;</p>
+</li>
+<li>
+<p>DISTINCT;</p>
+</li>
+<li>
+<p>BETWEEN;</p>
+</li>
+<li>
+<p>IS NOT NULL;</p>
+</li>
+<li>
+<p>LIKE</p>
+<ul>
+<li>
+<p>% zero, um ou vávrios caracteres;</p>
+</li>
+<li>
+<p>_ um caracter.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="agrupamentos">Agrupamentos</h3>
+<ul>
+<li>
+<p>COUNT</p>
+</li>
+<li>
+<p>SUM</p>
+</li>
+<li>
+<p>AVG</p>
+</li>
+<li>
+<p>MIN</p>
+</li>
+<li>
+<p>MAX</p>
+</li>
+</ul>
                 
                   
                 
@@ -448,6 +660,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../aula16/" title="Aula 16 (2019-06-11)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Aula 16 (2019-06-11)
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Exercícios 1
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
