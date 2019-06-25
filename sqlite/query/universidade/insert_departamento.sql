@@ -8,4 +8,4 @@ INSERT INTO Departamento
 VALUES      (3, 'Matematica', '2017-05-01', 4);
 
 INSERT INTO Departamento
-VALUES      (4, 'Fisica', '2019-02-01', 11);
+VALUES      (4, 'Fisica', '2019-02-01', 11)
