@@ -72,7 +72,7 @@
 * MAX
 
 
-### Selecionar informacoes
+### Selecionar informações
 
 * Selecionar todos empregados por ordem de salario;
 

@@ -103,7 +103,9 @@ Korth, H. F.; Silberschatz, A.;Sudarshan, S. Sistema de Banco de Dados,
 Tradução da Quinta Edição, Campus, 2006;
 
 Ramakrishnan, R.; Gehrke, J. Sistemas de Gerenciamento de Banco de Dados, Terceira
-Edição Brasileira, Mcgrow-Hill, 2008.
+Edição Brasileira, Mcgrow-Hill, 2008;
+
+**Elmasri R., Navathe S. B., Fundamentals of Database Systems, 7a edição, 2011.**
 
 
 ## Cronograma
