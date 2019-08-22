@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eff25776-ec2f-4a92-b0f7-1ad21fd0dbc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/docs/trabalho2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/application.267712eb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula11/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula12/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula13/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula13/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula14/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula15/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula16/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula16/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula17/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula17/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula6/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula7/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula8/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/aula9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula9/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/exercicios1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/exercicios1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/exercicios2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/exercicios2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/search/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/site/trabalho1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/trabalho1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite/db/universidade_start.db" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite/db/universidade_start.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/mkdocs.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,42 +20,29 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>venv</find>
-      <find>plugin</find>
-      <find>e</find>
-      <find>atribu</find>
-      <find>esquema</find>
-      <find>con</find>
-      <find>lógico do</find>
-      <find>exempos</find>
-      <find>tamb-</find>
-      <find>tam</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PhZUUxggDxyeQegfNvJtgT391t" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/university/university/db" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/university/university" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/university/university/db" />
-      <recent name="$PROJECT_DIR$/university/db" />
-      <recent name="$PROJECT_DIR$/doc/docs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/university" />
       <recent name="$PROJECT_DIR$/university/university" />
       <recent name="$PROJECT_DIR$/doc/docs/images/sql" />
       <recent name="$PROJECT_DIR$/doc/docs" />
       <recent name="$PROJECT_DIR$/doc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/university/university" />
+      <recent name="$PROJECT_DIR$/university/university/db" />
+      <recent name="$PROJECT_DIR$/university/db" />
+      <recent name="$PROJECT_DIR$/doc/docs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,7 +75,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
