@@ -1,24 +1,27 @@
 Banco de dados de Universidade
 
-1 Inserir
+1 Inserir:
   1.1 Departamento
-  1.2 Empregado
-    1.2.1 Dependentes
-  1.3 Projeto
-    1.3.1 Empregados
+  1.2 Dependente
+  1.3 Empregado
+  1.4 LocalDepartamento
+  1.5 Projeto
+  1.5 TrabalhaEm
 
-
-2 Buscar
+2 Atualizar:
   2.1 Departamento
-  2.2 Empregado
-  2.3 Projeto
+  2.2 Dependente
+  2.3 Empregado
+  2.4 LocalDepartamento
+  2.5 Projeto
+  2.5 TrabalhaEm
 
-
-3 Atualizar
-  <FAZER>
-
-
-4 Excluir
-  <FAZER>
+3 Excluir:
+  3.1 Departamento
+  3.2 Dependente
+  3.3 Empregado
+  3.4 LocalDepartamento
+  3.5 Projeto
+  3.5 TrabalhaEm
 
 0 Sair
