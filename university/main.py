@@ -6,21 +6,22 @@ MENU_FILE_INSERT = 'menu-inserir.txt'
 DB_FILE = 'db/university.db'
 DATE_FORMAT = '%Y-%m-%d'
 
-VALID_OPTIONS = {
-    '0', '1', '1.1', '1.1.1', '1.2', '1.2.1', '1.3', '1.3.1', '2'
-}
-
 
 def check_option(option):
+    """Todas opcoes do usuario que sao validas estao em: "valid_options"."""
     valid_options = {
-        '0', '1', '1.1', '1.1.1', '1.2', '1.2.1', '1.3', '1.3.1', '2'
+        '0', '1', '1.1', '1.1.1', '1.2', '1.2.1', '1.3', '1.3.1', '2', '3'
     }
-    return True if option in valid_options else False
+    if option in valid_options:
+        return True
+    else:
+        return False
+    # return True if option in valid_options else False
 
 
 def load_file(file_path):
-    with open(file_path) as mf:
-        return mf.read()
+    with open(file_path) as fp:
+        return fp.read()
 
 
 def load_menu():
@@ -100,8 +101,12 @@ def search_employees():
     return rows
 
 
+def exit():
+    return False
+
+
 def main():
-    option_mapping = {'0': lambda: False, '1': insert}
+    option_mapping = {'0': exit, '1': insert}
 
     menu_txt = load_menu()
     return_ = True
