@@ -2,10 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eff25776-ec2f-4a92-b0f7-1ad21fd0dbc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/docs/trabalho2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/docs/aula19.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/docs/aula19.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/images/icons/bitbucket.1b09e088.svg" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/assets/images/icons/bitbucket.1b09e088.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/images/icons/github.f0b8504a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/assets/images/icons/github.f0b8504a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/images/icons/gitlab.6dd19c00.svg" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/assets/images/icons/gitlab.6dd19c00.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/application.dc02f8ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/javascripts/modernizr.01ccdecf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/stylesheets/application-palette.224b79ff.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/assets/stylesheets/application.3020aac5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula11/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula12/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula13/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula13/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula14/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula15/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula16/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula16/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula17/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula17/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula18/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula18/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula19/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula19/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula8/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/aula9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/aula9/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/exercicios1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/exercicios1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/exercicios2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/exercicios2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/resolvidos1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/search/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/search/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/sitemap.xml.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/site/trabalho1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/site/trabalho1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/db/university.db" beforeDir="false" afterPath="$PROJECT_DIR$/university/db/university.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +62,7 @@
   <component name="ProjectId" id="1PhZUUxggDxyeQegfNvJtgT391t" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/university/university" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>

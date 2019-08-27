@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
@@ -46,17 +46,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -106,7 +106,9 @@
               Banco de dados
             </span>
             <span class="md-header-nav__topic">
-              Aula 4 (2019-04-11)
+              
+                Aula 4 (2019-04-11)
+              
             </span>
           
         </div>
@@ -574,6 +576,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../trabalho2/" title="Trabalho 2" class="md-nav__link">
+      Trabalho 2
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -832,18 +846,18 @@ atributo.</p>
 <p>Atributos derivados podem exigir "cálculo extra", diferente de pegar o
 dado já pronto do banco de dados, como exemplificados acima.</p>
 <p>Exemplo:</p>
-<div class="codehilite"><pre><span></span>quantidade_emprestimos = tamanho(emprestimos)
-valor_emprestimos = soma(emprestimos)
-quantidade_clientes = tamanho(clientes)
-...
+<div class="codehilite"><pre><span></span><span class="n">quantidade_emprestimos</span> <span class="o">=</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">emprestimos</span><span class="p">)</span>
+<span class="n">valor_emprestimos</span> <span class="o">=</span> <span class="n">soma</span><span class="p">(</span><span class="n">emprestimos</span><span class="p">)</span>
+<span class="n">quantidade_clientes</span> <span class="o">=</span> <span class="n">tamanho</span><span class="p">(</span><span class="n">clientes</span><span class="p">)</span>
+<span class="p">...</span>
 </pre></div>
 
 <h3 id="atributos-complexos">Atributos Complexos</h3>
 <p>Atributos compostos e multivalorados podem ser aninhados de uma maneira
 arbitrária.</p>
-<div class="codehilite"><pre><span></span>Endereco(
-  EnderecoRua(Numero, Logradouro),
-  Cidade, Estado, CEP, Apartamento))
+<div class="codehilite"><pre><span></span><span class="n">Endereco</span><span class="p">(</span>
+  <span class="n">EnderecoRua</span><span class="p">(</span><span class="n">Numero</span><span class="p">,</span> <span class="n">Logradouro</span><span class="p">),</span>
+  <span class="n">Cidade</span><span class="p">,</span> <span class="n">Estado</span><span class="p">,</span> <span class="n">CEP</span><span class="p">,</span> <span class="n">Apartamento</span><span class="p">))</span>
 </pre></div>
 
 <p><img alt="atrib-complexo" src="../images/ex-atrib-complexo-endereco.svg" /></p>
@@ -851,22 +865,22 @@ arbitrária.</p>
 <div class="superfences-tabs">
 <input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
 <label for="__tab_1_0">Enumerador</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span>Sexo = {Masculino, Feminino, Outro}
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">Sexo</span> <span class="o">=</span> <span class="err">{</span><span class="n">Masculino</span><span class="p">,</span> <span class="n">Feminino</span><span class="p">,</span> <span class="n">Outro</span><span class="err">}</span>
 
-Atributo qualitativo.
+<span class="n">Atributo</span> <span class="n">qualitativo</span><span class="p">.</span>
 </pre></div></div>
 <input name="__tabs_1" type="radio" id="__tab_1_1" />
 <label for="__tab_1_1">Enumerador</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span>Renda = {Baixa, Média, Alta}
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">Renda</span> <span class="o">=</span> <span class="err">{</span><span class="n">Baixa</span><span class="p">,</span> <span class="n">Média</span><span class="p">,</span> <span class="n">Alta</span><span class="err">}</span>
 
-Atributo qualitativo ordinal.
-Intervalo discreto (Alta &gt; Média &gt; Baixa)
+<span class="n">Atributo</span> <span class="n">qualitativo</span> <span class="n">ordinal</span><span class="p">.</span>
+<span class="n">Intervalo</span> <span class="n">discreto</span> <span class="p">(</span><span class="n">Alta</span> <span class="o">&gt;</span> <span class="n">Média</span> <span class="o">&gt;</span> <span class="n">Baixa</span><span class="p">)</span>
 </pre></div></div>
 <input name="__tabs_1" type="radio" id="__tab_1_2" />
 <label for="__tab_1_2">Intervalo</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span>Altura = [0.3, 3.0]
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">Altura</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span>
 
-Atributo com intervalo contínuo.
+<span class="n">Atributo</span> <span class="n">com</span> <span class="n">intervalo</span> <span class="n">contínuo</span><span class="p">.</span>
 </pre></div></div>
 </div>
 <h3 id="exemplo-de-entidades-e-atributos">Exemplo de entidades e atributos</h3>
@@ -880,22 +894,22 @@ Atributo com intervalo contínuo.
 </li>
 <li>
 <p>Esquemas (tipos entidades)
-    <div class="codehilite"><pre><span></span>cliente_esquema = (
-  nome_cliente: string,
-  seguro_social: string,
-  rua_cliente: string,
-  cidade_cliente: string)
+    <div class="codehilite"><pre><span></span><span class="n">cliente_esquema</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="n">nome_cliente</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span>
+  <span class="n">seguro_social</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span>
+  <span class="n">rua_cliente</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span>
+  <span class="n">cidade_cliente</span><span class="p">:</span> <span class="n">string</span><span class="p">)</span>
 </pre></div></p>
-<div class="codehilite"><pre><span></span>conta_esquema = (numero_conta: integer, saldo: real)
+<div class="codehilite"><pre><span></span><span class="n">conta_esquema</span> <span class="o">=</span> <span class="p">(</span><span class="n">numero_conta</span><span class="p">:</span> <span class="nb">integer</span><span class="p">,</span> <span class="n">saldo</span><span class="p">:</span> <span class="nb">real</span><span class="p">)</span>
 </pre></div>
 
-<div class="codehilite"><pre><span></span>emprestime_esquema = (numero_emprestimo: integer, total: real)
+<div class="codehilite"><pre><span></span><span class="n">emprestime_esquema</span> <span class="o">=</span> <span class="p">(</span><span class="n">numero_emprestimo</span><span class="p">:</span> <span class="nb">integer</span><span class="p">,</span> <span class="n">total</span><span class="p">:</span> <span class="nb">real</span><span class="p">)</span>
 </pre></div>
 
-<div class="codehilite"><pre><span></span>agencia_esquema = (
-  nome_agencia: string,
-  cidade_agência: string,
-  fundos: real)
+<div class="codehilite"><pre><span></span><span class="n">agencia_esquema</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="n">nome_agencia</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span>
+  <span class="n">cidade_agência</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span>
+  <span class="n">fundos</span><span class="p">:</span> <span class="nb">real</span><span class="p">)</span>
 </pre></div>
 
 </li>
@@ -1027,7 +1041,7 @@ Parentesco.</li>
       
     </div>
     
-      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
+      <script src="../assets/javascripts/application.245445c6.js"></script>
       
         
         

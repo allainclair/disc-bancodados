@@ -69,10 +69,10 @@ SELECT E.pnome, D.nome, P.nome, TE.horas
 FROM   Departamento D, Projeto P, Empregado E, TrabalhaEm TE
 WHERE  D.nome = 'Estatistica'
        AND P.departamento_id = D.id
-	   AND E.departamento_id = D.id
-	   AND TE.empregado_id = E.id
-	   AND TE.projeto_id = P.id
-	   AND TE.horas > 500
+       AND E.departamento_id = D.id
+       AND TE.empregado_id = E.id
+       AND TE.projeto_id = P.id
+       AND TE.horas > 500
 ORDER BY TE.horas
 ```
 
