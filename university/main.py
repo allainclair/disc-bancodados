@@ -166,6 +166,7 @@ def update_department():
         print(
             'Identificador do departamento invalido, '
             'tente atualizar o departamento novamente.\n')
+        return False
 
     name, start_date, manager_id = read_department()
     cursor = CONN.cursor()
@@ -179,7 +180,7 @@ def update_department():
         else:
             print(
                 'Identificador do gerente invalido, '
-                'tente inserir o departamento novamente.\n')
+                'tente atualizar o departamento novamente.\n')
             return False
     else:  # Se nao existe manager_id, campo eh opcional.
         query = update_department_query(department_id, name, start_date, manager_id)
@@ -199,7 +200,11 @@ def employee_exists(employee_id):
         f'FROM   Empregado E '
         f'WHERE  E.id = {employee_id}')
     # Bastar dar um "fetch", para vir uma linha.
-    return True if cursor.fetchone() is not None else False
+    if cursor.fetchone() != None:
+        return True
+    else:
+        return False
+    # return True if cursor.fetchone() is not None else False
 
 
 def department_exists(department_id):
@@ -217,7 +222,7 @@ def department_exists(department_id):
 
 
 def exit():
-    return False
+    return '0'
 
 
 def main():
@@ -226,7 +231,7 @@ def main():
 
     menu_txt = load_menu()
     return_ = True
-    while return_:
+    while return_ != '0':
         print(menu_txt)
         option = input('Escolha uma das opções acima: > ')
         if check_option(option, option_mapping.keys()):

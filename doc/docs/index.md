@@ -2,6 +2,8 @@
 
 ## **Avisos**
 
+### Exame - 2019-08-05 - 21:20h - 23:00h
+
 ### Prova 2 - 2019-08-29 - 21:20h - 23:00h
 
 ### [Trabalho 2](trabalho2.md) - 2019-08-30 - 23:59:59 - horário de recebimento.
